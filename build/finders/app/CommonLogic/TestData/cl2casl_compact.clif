@@ -1,0 +1,54 @@
+(cl-text prop
+  (thisMustBeTrue)
+  (and (x) (b) (not (c)))
+  (or (d) (e) (not (f)))
+)
+
+(cl-text pred
+  (P y)
+  (Q h)
+  (P g h)
+)
+
+(cl-text quant
+  (forall (x y z) (and (P x) (P y) (not (P z))))
+  (exists (x) (P x))
+)
+
+(cl-text compact
+  (P g)
+  (Q P)
+  (forall (P) (P h))
+)
+
+(cl-text func
+  (= (F g) h)
+  (= g (G h i j))
+  (forall (H I) (= (H g) (I h i)))
+  (= ((J ((K g) h) i) j) k)
+)
+
+(cl-text comments
+  (cl-comment 'CommentedText' (and (x)
+                                   (cl-comment 'CommentedSentence' (b))
+                                   (= (F g) (cl-comment 'CommentedTerm' h))
+                              )
+  )
+)
+
+(cl-text module1
+(cl-module M (forall (a b) (and (P a) (Q b))))
+)
+
+
+(cl-text module2
+(cl-module N (cl-excludes ex_a ex_b) (forall (a b) (and (P a) (Q b))))
+)
+
+(cl-text module3
+  (cl-module M1 (cl-excludes ex_a ex_b)
+    (cl-module M2 (cl-excludes ex_a ex_b)
+      (exists (a b) (= a b))
+    )
+  )
+)

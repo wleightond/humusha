@@ -1,0 +1,9 @@
+%prec({a} < {b})%
+%prec({b} < {c})%
+%prec({c} < {a})%
+%left_assoc(a, b, c)%
+%right_assoc(b, a, d, d)%
+parse error at 6.1:
+unexpected end of input
+expecting "%"
+

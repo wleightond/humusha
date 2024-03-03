@@ -1,0 +1,120 @@
+{
+    "formulae": {
+        "COP_f1": {
+            "sentence": "(forall (x) (if (A x) (and (exists (y) (and (B y) (C y x))) (exists (z) (and (D z) (C z x))))))",
+            "objs": ["A", "B", "C", "D"],
+            "constraints": [["C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
+        }, 
+        "COP_b_f1": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (C y x)))))",
+            "objs": ["A", "B", "C"],
+            "constraints": [["C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
+        }, 
+        "PCOP_f1": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["B", "endurant"]]
+        }, 
+        "PCOP_f2": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["B", "perdurant"]]
+        }, 
+        "QDP_f1": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (C x y) (exists (z) (and (D z) (E y z) (exists (v) (F z v))))))))",
+            "objs": ["A", "B", "C", "D", "E", "F"],
+            "constraints": [["C", "has-quality"], ["E", "has-quale"]]
+        },
+        "RR_f1": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["B", ["physical-object", "agentive-physical-object", "non-agentive-physical-object"]]]
+        }, 
+        "RR_f2": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["B", ["social-object", "agentive-social-object", "social-agent", "non-agentive-social-object"]]]
+        }, 
+        "RR_f3": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (R x y)))))",
+            "objs": ["A", "B", "R"],
+            "constraints": [["R", ["OD", "generically-dependent-on"]]]
+        },
+        "CDP_f1": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (C x y)))))",
+            "objs": ["A", "B", "C"],
+            "constraints": []
+        },
+        "CRA_a_f1": {
+            "sentence": "(forall (x) (forall (y) (if (and (A x) (B x y)) (exists (z) (C y z)))))",
+            "objs": ["A", "B", "C"],
+            "constraints": [["C", "hasDataValue"]]
+        },
+        "CRA_a_f2": {
+            "sentence": "(forall (x y) (if (and (A x) (B x y)) (exists (z) (C y z))))",
+            "objs": ["A", "B", "C"],
+            "constraints": [["C", "hasDataValue"]]
+        },
+        "CRA_e_f1": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B x y) (exists (z) (C y z))))))",
+            "objs": ["A", "B", "C"],
+            "constraints": [["C", "hasDataValue"]]
+        },
+        "GC_a_f1": {
+            "sentence": "(forall (x) (if (R x) (exists (y) (and (B y) (participates-in x y)))))",
+            "objs": ["A", "B", "C"],
+            "constraints": [["B", "{C}-Occurence"]]
+        },
+        "GC_a_f2": {
+            "sentence": "(forall (x) (if (R x) (exists (y) (and (C y) (inheres-in y x)))))",
+            "objs": ["R", "C"],
+            "constraints": []
+        },
+        "GC_a_f3": {
+            "sentence": "(forall (x) (if (B x) (exists (y) (and (C y) (has-focus x y)))))",
+            "objs": ["B", "C"],
+            "constraints": [["B", "{C}-Occurence"]]
+        }
+    },
+    "patterns": {
+        "COP": {
+            "formulae": ["COP_f1"],
+            "constraints": []
+        },
+        "COP_b": {
+            "formulae": ["COP_b_f1"],
+            "constraints": []
+        },
+        "PCOP": {
+            "formulae": ["COP_f1", "PCOP_f1", "PCOP_f2"],
+            "constraints": [
+                [["COP_f1", "B"], ["PCOP_f1", "A"]],
+                [["COP_f1", "D"], ["PCOP_f1", "A"]],
+                [["COP_f1", "A"], ["PCOP_f2", "A"]]
+            ]
+        },
+        "QDP": {
+            "formulae": ["QDP_f1"],
+            "constraints": []
+        },
+        "RR": {
+            "formulae": ["RR_f1", "RR_f2", "RR_f3"],
+            "constraints": [
+                [["RR_f1", "A"], ["RR_f3", "A"]],
+                [["RR_f2", "A"], ["RR_f3", "B"]]
+            ]
+        },
+        "CDP": {
+            "formulae": ["CDP_f1"],
+            "constraints": []
+        },
+        "CRA_a": {
+            "formulae": ["CRA_a_f1"],
+            "constraints": []
+        },
+        "CRA_e": {
+            "formulae": ["CRA_e_f1"],
+            "constraints": []
+        }
+    }
+}

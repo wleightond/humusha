@@ -1,0 +1,450 @@
+a
+parse error at 2.1:
+unexpected "1"
+expecting words
+
+parse error at 3.1:
+unexpected "'"
+expecting words
+
+parse error at 4.1:
+unexpected "'"
+expecting words
+
+parse error at 5.1:
+unexpected "'"
+expecting words
+
+parse error at 6.1:
+unexpected "'"
+expecting words
+
+parse error at 7.1:
+unexpected "'"
+expecting words
+
+parse error at 8.1:
+unexpected "'"
+expecting words
+
+parse error at 9.1:
+unexpected "'"
+expecting words
+
+parse error at 10.1:
+unexpected "'"
+expecting words
+
+parse error at 11.1:
+unexpected "'"
+expecting words
+
+parse error at 12.1:
+unexpected "'"
+expecting words
+
+b1
+b'
+bc
+b12
+b1'
+b1d
+b'3
+b'e
+b''
+bf4
+bf'
+bfg
+b_1
+b_'
+b_c
+ä_12
+ü_1'
+a_1d
+b_'3
+b_'e
+b_''
+b_f4
+b_f'
+b_fg
+sdafad_fddasfda_dsafsdaf
+parse error at 38.1:
+unexpected "."
+expecting words
+
+parse error at 39.1:
+unexpected "<"
+expecting words
+
+parse error at 40.1:
+unexpected "<"
+expecting words
+
+parse error at 41.1:
+unexpected ">"
+expecting words
+
+parse error at 42.1:
+unexpected "&"
+expecting words
+
+parse error at 43.1:
+unexpected "|"
+expecting words
+
+parse error at 44.1:
+unexpected "+"
+expecting words
+
+parse error at 45.1:
+unexpected "-"
+expecting words
+
+parse error at 46.1:
+unexpected "/"
+expecting words
+
+parse error at 47.1:
+unexpected "~"
+expecting words
+
+parse error at 48.1:
+unexpected "!"
+expecting words
+
+parse error at 49.1:
+unexpected "."
+expecting words
+
+parse error at 50.1:
+unexpected "{"
+expecting words
+
+parse error at 51.1:
+unexpected "["
+expecting words
+
+parse error at 52.1:
+unexpected "{"
+expecting words
+
+parse error at 53.1:
+unexpected "["
+expecting words
+
+parse error at 54.1:
+unexpected "["
+expecting words
+
+parse error at 55.1:
+unexpected "{"
+expecting words
+
+parse error at 56.1:
+unexpected "_"
+expecting words
+
+parse error at 57.1:
+unexpected "_"
+expecting words
+
+parse error at 58.1:
+unexpected "_"
+expecting words
+
+parse error at 59.1:
+unexpected "_"
+expecting words
+
+parse error at 60.1:
+unexpected ">"
+expecting words
+
+parse error at 61.1:
+unexpected ">"
+expecting words
+
+parse error at 62.1:
+unexpected "_"
+expecting words
+
+parse error at 63.1:
+unexpected "_"
+expecting words
+
+parse error at 64.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 65.1:
+unexpected "="
+expecting words
+
+parse error at 66.1:
+unexpected "="
+expecting words
+
+parse error at 67.1:
+unexpected "."
+expecting words
+
+parse error at 68.1:
+unexpected "{"
+expecting words
+
+parse error at 69.1:
+unexpected "."
+expecting words
+
+parse error at 70.1:
+unexpected "."
+expecting words
+
+parse error at 71.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 72.3:
+unexpected '['
+expecting end of input
+
+parse error at 73.3:
+unexpected '['
+expecting end of input
+
+parse error at 74.1:
+unexpected "_"
+expecting words
+
+parse error at 75.1:
+unexpected "_"
+expecting words
+
+parse error at 76.1:
+unexpected "_"
+expecting words
+
+parse error at 77.1:
+unexpected "_"
+expecting words
+
+parse error at 78.1:
+unexpected "_"
+expecting words
+
+parse error at 79.1:
+unexpected "_"
+expecting words
+
+parse error at 80.1:
+unexpected "_"
+expecting words
+
+parse error at 81.1:
+unexpected "_"
+expecting words
+
+parse error at 82.1:
+unexpected "_"
+expecting words
+
+parse error at 83.3:
+unexpected "_"
+expecting casl char
+
+parse error at 84.3:
+unexpected "_"
+expecting casl char
+
+parse error at 85.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 86.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 87.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 88.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 89.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 90.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 91.1:
+unexpected "_"
+expecting words
+
+parse error at 92.6:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 93.1:
+unexpected "_"
+expecting words
+
+parse error at 94.1:
+unexpected "'"
+expecting words
+
+parse error at 95.1:
+unexpected "*"
+expecting words
+
+parse error at 96.1:
+unexpected "_"
+expecting words
+
+parse error at 97.1:
+unexpected "_"
+expecting words
+
+parse error at 98.1:
+unexpected "_"
+expecting words
+
+parse error at 99.1:
+unexpected "_"
+expecting words
+
+parse error at 100.1:
+unexpected "["
+expecting words
+
+parse error at 101.1:
+unexpected "["
+expecting words
+
+parse error at 102.1:
+unexpected "_"
+expecting words
+
+parse error at 103.1:
+unexpected "_"
+expecting words
+
+parse error at 104.1:
+unexpected "_"
+expecting words
+
+parse error at 105.1:
+unexpected "_"
+expecting words
+
+parse error at 106.1:
+unexpected "["
+expecting words
+
+parse error at 107.1:
+unexpected "["
+expecting words
+
+parse error at 108.1:
+unexpected "*"
+expecting words
+
+parse error at 109.1:
+unexpected "*"
+expecting words
+
+parse error at 110.1:
+unexpected "*"
+expecting words
+
+parse error at 111.1:
+unexpected "_"
+expecting words
+
+parse error at 112.1:
+unexpected "_"
+expecting words
+
+parse error at 113.1:
+unexpected "*"
+expecting words
+
+parse error at 114.1:
+unexpected "["
+expecting words
+
+parse error at 115.1:
+unexpected "{"
+expecting words
+
+parse error at 116.1:
+unexpected "{"
+expecting words
+
+parse error at 117.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 118.2:
+unexpected '{'
+expecting casl char, "_" or end of input
+
+parse error at 119.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 120.1:
+unexpected "<"
+expecting words
+
+parse error at 121.2:
+unexpected '{'
+expecting casl char, "_" or end of input
+
+parse error at 122.1:
+unexpected "<"
+expecting words
+
+parse error at 123.2:
+unexpected '{'
+expecting casl char, "_" or end of input
+
+parse error at 124.1:
+unexpected "<"
+expecting words
+
+parse error at 125.2:
+unexpected '['
+expecting casl char, "_" or end of input
+
+parse error at 126.1:
+unexpected ":"
+expecting words
+
+parse error at 127.1:
+unexpected "@"
+expecting words
+
+parse error at 128.1:
+unexpected "\\"
+expecting words
+
+parse error at 129.1:
+unexpected "."
+expecting words
+
+parse error at 130.1:
+unexpected "."
+expecting words
+
+parse error at 131.1:
+unexpected "|"
+expecting words
+
+parse error at 132.1:
+unexpected "["
+expecting words
+

@@ -1,0 +1,198 @@
+parse error at 1.2:
+unexpected end of input
+expecting "\\" or "\""
+
+parse error at 2.2:
+unexpected '1'
+expecting "{", "[", "__" or end of input
+
+parse error at 3.2:
+unexpected '.'
+expecting "{", "[", "__" or end of input
+
+parse error at 4.2:
+unexpected "'"
+expecting "\\" or "\""
+
+parse error at 5.6:
+unexpected "37"
+expecting octal digit
+
+'\o477'
+parse error at 7.3:
+unexpected "d"
+expecting digit, "x" or "o"
+
+'\256'
+parse error at 9.4:
+unexpected "'"
+expecting hexadecimal digit
+
+parse error at 10.4:
+unexpected end of input
+expecting "'"
+
+parse error at 11.4:
+unexpected "a"
+expecting "'"
+
+parse error at 12.3:
+unexpected "\\"
+expecting "'"
+
+parse error at 13.1:
+unexpected end of input
+expecting id
+
+parse error at 14.2:
+unexpected 'b'
+expecting "{", "[", "__" or end of input
+
+parse error at 15.3:
+unexpected keyword "as"
+expecting id
+
+parse error at 16.3:
+unexpected "c"
+expecting "'"
+
+parse error at 17.1:
+unexpected "_"
+expecting id
+
+parse error at 18.5:
+unexpected end of input
+expecting casl char
+
+parse error at 19.3:
+unexpected end of input
+expecting simple-id, "{", "[" or "__"
+
+parse error at 20.2:
+unexpected keyword "."
+expecting id
+
+parse error at 21.4:
+unexpected keyword "::="
+expecting id
+
+parse error at 22.4:
+unexpected keyword "|->"
+expecting id
+
+parse error at 23.2:
+unexpected end of input
+expecting token or "]"
+
+parse error at 24.1:
+unexpected "]"
+expecting id
+
+parse error at 25.2:
+unexpected end of input
+expecting token or "}"
+
+parse error at 26.1:
+unexpected "}"
+expecting id
+
+parse error at 27.1:
+unexpected "`"
+expecting id
+
+parse error at 28.1:
+unexpected "%"
+expecting id
+
+parse error at 29.2:
+unexpected keyword "."
+expecting id
+
+parse error at 30.2:
+unexpected keyword "."
+expecting id
+
+parse error at 31.4:
+unexpected keyword "="
+expecting id
+
+parse error at 32.5:
+unexpected "]"
+expecting simple-id, "{", "[" or "__"
+
+parse error at 33.6:
+unexpected "]"
+expecting simple-id, "{", "[" or "__"
+
+parse error at 34.10:
+unexpected "]"
+expecting token or "}"
+
+parse error at 35.3:
+unexpected ","
+expecting id
+
+parse error at 36.5:
+unexpected keyword "="
+expecting id
+
+parse error at 37.15:
+unexpected '<'
+expecting "__" or end of input
+
+parse error at 38.4:
+unexpected '='
+expecting "{", "[", "__" or end of input
+
+parse error at 39.6:
+unexpected '%'
+expecting "__" or end of input
+
+parse error at 40.1:
+unexpected "\""
+expecting id
+
+parse error at 41.8:
+unexpected '>'
+expecting "__" or end of input
+
+parse error at 42.5:
+unexpected "]"
+expecting simple-id, "{", "[" or "__"
+
+parse error at 43.5:
+unexpected "]"
+expecting simple-id, "{", "[" or "__"
+
+parse error at 44.4:
+unexpected keyword "="
+expecting id
+
+parse error at 45.5:
+unexpected keyword "when"
+expecting id
+
+parse error at 46.5:
+unexpected keyword "else"
+expecting id
+
+parse error at 47.3:
+unexpected keyword "if"
+expecting id
+
+parse error at 48.3:
+unexpected keyword "=>"
+expecting id
+
+parse error at 49.4:
+unexpected keyword "<=>"
+expecting id
+
+parse error at 50.5:
+unexpected keyword "type"
+expecting id
+
+parse error at 51.7:
+unexpected keyword "cotype"
+expecting id
+

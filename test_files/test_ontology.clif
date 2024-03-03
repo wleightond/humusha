@@ -1,0 +1,57 @@
+
+
+(forall (x) (if (Book x) (endurant x)))
+
+(forall (x) (if (Duration x) (TQ x)))
+
+(forall (x) (if (Person x) (agentive-physical-object x)))
+
+(forall (x) (if (Person x) (endurant x)))
+
+(forall (x) (if (Employee x) (agentive-social-object x)))
+
+(forall (x) (if (Running x) (perdurant x)))
+
+(forall (x) (if (Time x) (TR x)))
+
+(forall (x) (if (Marathon x) (perdurant x)))
+
+(forall (x)
+  (if (Bookloan x)
+    (and 
+      (exists (y) 
+        (and (Book y) (participant-in y x)))
+      (exists (z)
+        (and (Person z) (participant-in z x))))))
+
+(forall (x)
+  (if (Bookloan x)
+    (exists (y)
+      (and (Duration y) (has-quality x y)))))
+
+
+(forall (x)
+  (if (Duration x)
+    (exists (y)
+      (and (Time y) (has-quale x y)))))
+
+
+(forall (x) (if (Employee x) (exists (y) (and (Person y)
+                                              (generically-dependent-on x y)))))
+
+(forall (x)
+  (if (Person x)
+    (exists (y)
+      (and (Running y) (participant-in x y)))))
+
+
+(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)
+                                       (exists (z) (and (K z) (has-quale y z)
+                                                        (exists (v) (hasDataValue z
+                                                                                  v))))))))
+
+(forall (x) (if (D x) 
+                (exists (y) (and (S x y) 
+                                 (exists (z) (hasDataValue y z))))))
+
+(forall (x) (if (Bookloan x) (perdurant x)))

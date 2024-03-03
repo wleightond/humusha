@@ -1,0 +1,424 @@
+cabal-version:      2.4
+name:               clsents
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             William Leighton Dawson
+maintainer:         dwswil002@myuct.ac.za
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+executable clsentscop
+    main-is:          cop.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentscop_b
+    main-is:          cop_b.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentspcop
+    main-is:          pcop.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentsqdp
+    main-is:          qdp.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentsrr
+    main-is:          rr.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentscdp
+    main-is:          cdp.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentscra_a
+    main-is:          cra_a.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
+
+executable clsentscra_e
+    main-is:          cra_e.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        Codec.Binary.UTF8.Generic
+        Codec.Binary.UTF8.String
+        Common.AS_Annotation
+        Common.AnnoParser
+        Common.AnnoState
+        Common.ConvertLiteral
+        Common.Doc
+        Common.DocUtils
+        Common.GlobalAnnotations
+        Common.IRI
+        Common.Id
+        Common.Keywords
+        Common.LaTeX_funs
+        Common.LaTeX_maps
+        Common.Lexer
+        Common.Lib.MapSet
+        Common.Lib.Pretty
+        Common.Lib.Rel
+        Common.Parsec
+        Common.Percent
+        Common.Prec
+        Common.Token
+        Common.Utils
+        CommonLogic.AS_CommonLogic
+        CommonLogic.Lexer_CLIF
+        CommonLogic.Parse_CLIF
+        CommonLogic.Tools
+        Data.ByteString.UTF8
+        OWL2.ColonKeywords
+        OWL2.Keywords
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    
+        base,
+        parsec,
+        fgl,
+        bytestring ^>=0.11.3.1,
+        containers ^>=0.6.5.1,
+        directory ^>=1.3.6.2,
+        filepath ^>=1.4.2.2,
+        process ^>=1.6.13.2
+    hs-source-dirs:   app
+    default-language: Haskell2010
