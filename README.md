@@ -1,11 +1,17 @@
-# README
+# Humusha: Ontology Design Pattern Substitution in FOL Ontologies Proof-of-Concept Tool
 
-to get a shell environment with the required packages (requires [nix](https://nixos.org/)):
+A proof-of-concept tool for substituting ontology design patterns in first-order logic ontologies encoded in clif.
+
+It includes pattern specifications in `config.json`, test ontologies in `test_files/`, and the raw result data in `/output/`
+
+## Usage
+
+To get a shell environment with the required packages (requires [nix](https://nixos.org/)):
 
     nix develop
     make utils
 
-to make the binaries that find satisfied formulae
+To make the binaries that find satisfied formulae
 
     ./build_instance_finders.py
     # OR
