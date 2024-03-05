@@ -1,0 +1,2 @@
+
+(forall (x) (if (E x) (exists (y) (and (Q y) (hasDataValue x y)))))

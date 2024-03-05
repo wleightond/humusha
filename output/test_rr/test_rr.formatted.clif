@@ -1,0 +1,4 @@
+(forall (x) (if (Person x) (agentive-physical-object x)))
+(forall (x) (if (Employee x) (agentive-social-object x)))
+(forall (x) (if (Employee x) (exists (y) (and (Person y)
+                                              (generically-dependent-on x y)))))

@@ -1,0 +1,21 @@
+INSTANCE
+Just ("PCOP_f1",["Book","endurant"])
+(forall (x) (if (Book x) (endurant x)))
+INSTANCE
+Just ("PCOP_f1",["Person","endurant"])
+(forall (x) (if (Person x) (endurant x)))
+INSTANCE
+Just ("PCOP_f2",["Running","perdurant"])
+(forall (x) (if (Running x) (perdurant x)))
+INSTANCE
+Just ("PCOP_f2",["Marathon","perdurant"])
+(forall (x) (if (Marathon x) (perdurant x)))
+INSTANCE
+Just ("COP_f1",["Bookloan","Book","participant-in","Person"])
+(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
+                                                   (participant-in y x)))
+                                  (exists (z) (and (Person z)
+                                                   (participant-in z x))))))
+INSTANCE
+Just ("PCOP_f2",["Bookloan","perdurant"])
+(forall (x) (if (Bookloan x) (perdurant x)))

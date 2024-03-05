@@ -1,0 +1,6 @@
+COMMAND: DELETE
+(forall (x) (if (D x) (exists (y) (and (S x y)
+                                       (exists (z) (hasDataValue y z))))))
+COMMAND: ADD
+(forall (x) (if (D x) (exists (y) (hasDataValue x y))))
+

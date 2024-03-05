@@ -1,0 +1,24 @@
+COMMAND: DELETE
+(forall (x) (if (Duration x) (exists (y) (and (Time y)
+                                              (has-quale x y)))))
+
+COMMAND: ADD
+(forall (x) (if (Duration x) (exists (y) (and (Time y) (hasDataValue x y)))))
+COMMAND: DELETE
+(forall (x) (if (Bookloan x) (exists (y) (and (Duration y)
+                                              (has-quality x y)))))
+
+COMMAND: ADD
+(forall (x) (if (Bookloan x) (exists (y) (and (Duration y) (hasDataValue x y)))))
+COMMAND: DELETE
+(forall (x) (if (Employee x) (exists (y) (and (Person y)
+                                              (generically-dependent-on x y)))))
+
+COMMAND: ADD
+(forall (x) (if (Employee x) (exists (y) (and (Person y) (hasDataValue x y)))))
+COMMAND: DELETE
+(forall (x) (if (Person x) (exists (y) (and (Running y)
+                                            (participant-in x y)))))
+COMMAND: ADD
+(forall (x) (if (Person x) (exists (y) (and (Running y) (hasDataValue x y)))))
+

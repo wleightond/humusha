@@ -1,0 +1,6 @@
+INSTANCE
+Just ("RR_f1",["Scene","physical-object"])
+(forall (a) (if (Scene a) (physical-object a)))
+INSTANCE
+Just ("RR_f1",["SceneEntity","physical-object"])
+(forall (a) (if (SceneEntity a) (physical-object a)))

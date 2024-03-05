@@ -1,0 +1,10 @@
+INSTANCE
+Just ("RR_f1",["Person","agentive-physical-object"])
+(forall (x) (if (Person x) (agentive-physical-object x)))
+INSTANCE
+Just ("RR_f2",["Employee","agentive-social-object"])
+(forall (x) (if (Employee x) (agentive-social-object x)))
+INSTANCE
+Just ("RR_f3",["Employee","Person","generically-dependent-on"])
+(forall (x) (if (Employee x) (exists (y) (and (Person y)
+                                              (generically-dependent-on x y)))))

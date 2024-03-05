@@ -1,0 +1,6 @@
+INSTANCE
+Just ("RR_f1",["Living","physical-object"])
+(forall (a) (if (Living a) (physical-object a)))
+INSTANCE
+Just ("RR_f1",["NonLiving","physical-object"])
+(forall (a) (if (NonLiving a) (physical-object a)))

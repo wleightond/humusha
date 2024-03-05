@@ -1,0 +1,17 @@
+COMMAND: DELETE
+(forall (x) (if (Bookloan x) (perdurant x)))
+COMMAND: DELETE
+(forall (x) (if (Book x) (endurant x)))
+
+COMMAND: DELETE
+(forall (x) (if (Person x) (endurant x)))
+
+COMMAND: DELETE
+(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
+                                                   (participant-in y x)))
+                                  (exists (z) (and (Person z)
+                                                   (participant-in z x))))))
+
+COMMAND: ADD
+(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))
+

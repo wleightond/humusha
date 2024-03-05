@@ -1,0 +1,6 @@
+INSTANCE
+Just ("COP_f1",["Bookloan","Book","participant-in","Person"])
+(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
+                                                   (participant-in y x)))
+                                  (exists (z) (and (Person z)
+                                                   (participant-in z x))))))

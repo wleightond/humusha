@@ -1,0 +1,12 @@
+INSTANCE
+Just ("RR_f2",["concept","non-agentive-social-object"])
+(forall (a) (if (concept a) (non-agentive-social-object a)))
+INSTANCE
+Just ("RR_f2",["description","non-agentive-social-object"])
+(forall (a) (if (description a) (non-agentive-social-object a)))
+INSTANCE
+Just ("RR_f2",["information-object","non-agentive-social-object"])
+(forall (a) (if (information-object a) (non-agentive-social-object a)))
+INSTANCE
+Just ("RR_f2",["non-agentive-social-object","social-object"])
+(forall (a) (if (non-agentive-social-object a) (social-object a)))

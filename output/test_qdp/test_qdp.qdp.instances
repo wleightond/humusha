@@ -1,0 +1,6 @@
+INSTANCE
+Just ("QDP_f1",["E","Q","has-quality","K","has-quale","hasDataValue"])
+(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)
+                                       (exists (z) (and (K z) (has-quale y z)
+                                                        (exists (v) (hasDataValue z
+                                                                                  v))))))))

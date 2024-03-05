@@ -1,5 +1,4 @@
 .DS_Store
-output/**/*
 prep_onto
 simple_parse
 # Byte-compiled / optimized / DLL files

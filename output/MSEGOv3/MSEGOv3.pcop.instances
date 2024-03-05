@@ -1,0 +1,15 @@
+INSTANCE
+Just ("PCOP_f1",["arbitrary-sum","endurant"])
+(forall (a) (if (arbitrary-sum a) (endurant a)))
+INSTANCE
+Just ("PCOP_f2",["event","perdurant"])
+(forall (a) (if (event a) (perdurant a)))
+INSTANCE
+Just ("PCOP_f1",["non-physical-endurant","endurant"])
+(forall (a) (if (non-physical-endurant a) (endurant a)))
+INSTANCE
+Just ("PCOP_f1",["physical-endurant","endurant"])
+(forall (a) (if (physical-endurant a) (endurant a)))
+INSTANCE
+Just ("PCOP_f2",["stative","perdurant"])
+(forall (a) (if (stative a) (perdurant a)))

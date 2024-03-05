@@ -1,0 +1,13 @@
+INSTANCE
+Just ("CDP_f1",["DM-Operator","boolean","isMultiAlgorithmOperator"])
+(forall (a) (if (DM-Operator a) (exists (b) (and (boolean b)
+                                                 (isMultiAlgorithmOperator a
+                                                                           b)))))
+INSTANCE
+Just ("CDP_f1",["SearchStrategy","boolean","isAdmissible"])
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isAdmissible a b)))))
+INSTANCE
+Just ("CDP_f1",["SearchStrategy","boolean","isComplete"])
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isComplete a b)))))

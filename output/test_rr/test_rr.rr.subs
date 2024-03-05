@@ -1,0 +1,12 @@
+COMMAND: DELETE
+(forall (x) (if (Person x) (agentive-physical-object x)))
+
+COMMAND: DELETE
+(forall (x) (if (Employee x) (agentive-social-object x)))
+
+COMMAND: DELETE
+(forall (x) (if (Employee x) (exists (y) (and (Person y)
+                                              (generically-dependent-on x y)))))
+COMMAND: ADD
+(forall (x) (if (Employee x) (Person x)))
+

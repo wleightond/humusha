@@ -1,0 +1,7 @@
+(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
+                                                   (participant-in y x)))
+                                  (exists (z) (and (Person z)
+                                                   (participant-in z x))))))
+(forall (x) (if (Bookloan x) (perdurant x)))
+(forall (x) (if (Book x) (endurant x)))
+(forall (x) (if (Person x) (endurant x)))

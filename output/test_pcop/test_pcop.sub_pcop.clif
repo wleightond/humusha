@@ -1,0 +1,2 @@
+
+(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))

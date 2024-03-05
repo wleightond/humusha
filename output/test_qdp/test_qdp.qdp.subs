@@ -1,0 +1,8 @@
+COMMAND: DELETE
+(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)
+                                       (exists (z) (and (K z) (has-quale y z)
+                                                        (exists (v) (hasDataValue z
+                                                                                  v))))))))
+COMMAND: ADD
+(forall (x) (if (E x) (exists (y) (and (Q y) (hasDataValue x y)))))
+

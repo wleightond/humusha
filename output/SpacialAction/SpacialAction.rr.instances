@@ -1,0 +1,3 @@
+INSTANCE
+Just ("RR_f1",["SpatialObject","physical-object"])
+(forall (a) (if (SpatialObject a) (physical-object a)))
