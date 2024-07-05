@@ -1,0 +1,14 @@
+matches:	('RR_f1', ['PhysicalBuilding', 'physical-object'], '(forall (a) (if (PhysicalBuilding a) (physical-object a)))\n')
+	('RR_f1', ['PhysicalEntity', 'physical-object'], '(forall (a) (if (PhysicalEntity a) (physical-object a)))\n')
+	('RR_f1', ['PhysicalRoom', 'physical-object'], '(forall (a) (if (PhysicalRoom a) (physical-object a)))\n')
+	('RR_f1', ['User', 'physical-object'], '(forall (a) (if (User a) (physical-object a)))\n')
+	('RR_f1', ['Scene', 'physical-object'], '(forall (a) (if (Scene a) (physical-object a)))\n')
+	('RR_f1', ['SceneEntity', 'physical-object'], '(forall (a) (if (SceneEntity a) (physical-object a)))')
+valid_rrs(matches): []
+sub_rrs(rrs) []
+
+
+subs:
+
+No substitutions generated.
+

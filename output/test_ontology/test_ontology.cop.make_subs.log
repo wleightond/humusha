@@ -1,0 +1,9 @@
+matches:	('COP_f1', ['Bookloan', 'Book', 'participant-in', 'Person'], '(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))')
+valid_cops(matches): [('COP', ['Bookloan', 'Book', 'participant-in', 'Person'], ['(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))'])]
+sub_cops(cops) [(['(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))'], ['(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))'])]
+
+
+subs:(['(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))'], ['(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))'])
+
+1 substitution generated.
+

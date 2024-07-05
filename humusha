@@ -1,0 +1,85 @@
+#!/usr/bin/env python
+
+import click
+import os
+
+@click.group()
+def cli():
+    pass
+
+def ext(filename):
+    return filename[filename.rindex('.')+1:]
+
+def target_filename(ontology_file):
+    full_fn = ontology_file[ontology_file.rindex('/')+1:]
+    target_filename = full_fn[:full_fn.rindex('.')]
+    return target_filename
+
+def target_path(ontology_file):
+    filename = target_filename(ontology_file)
+    path = f"./output/{filename}/{filename}"
+    return path
+
+@click.command()
+def build_instance_finders():
+    cmd = './build_instance_finders.py'
+    os.system(cmd)
+    click.echo('Instance finders built to: ./bin')
+
+@click.command()
+@click.argument('ontology_file')
+def normalise_ontology(ontology_file):
+    output_file = f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
+    fmt_cmd = f"""mkdir -p output/{target_filename(ontology_file)} \
+        && ./prep_onto \
+            < {ontology_file}\
+            > {output_file}"""
+    os.system(fmt_cmd)
+    click.echo(f"Normalised ontology written to: {output_file}")
+
+@click.command()
+@click.argument('pattern')
+@click.argument('ontology_file')
+def find_axiom_instances(pattern, ontology_file):
+    axioms_file = f"{target_path(ontology_file)}.{pattern}.instances"
+    cmd = f"""./bin/find_{pattern}_instances \
+        < {target_path(ontology_file)}.formatted.{ext(ontology_file)} \
+        > {axioms_file}"""
+    os.system(cmd)
+    click.echo(f"Axiom instances written to: {axioms_file}")
+
+@click.command()
+@click.argument('pattern')
+@click.argument('ontology_file')
+def make_substitutions(pattern, ontology_file):
+    log_file = f"{target_path(ontology_file)}.{pattern}.make_subs.log"
+    substitution_file = f"{target_path(ontology_file)}.{pattern}.subs"
+    cmd = f"""./make_subs.py {pattern} \
+        < {target_path(ontology_file)}.{pattern}.instances \
+        2> {log_file} \
+        1> {substitution_file}"""
+    os.system(cmd)
+    click.echo(f"Logs written to: {log_file}")
+    click.echo(f"Substitutions written to: {substitution_file}")
+
+@click.command()
+@click.argument('pattern')
+@click.argument('ontology_file')
+def apply_substitutions(pattern, ontology_file):
+    output_file = f"{target_path(ontology_file)}.sub_{pattern}.{ext(ontology_file)}"
+    cmd = f"""./sub_patt.py \
+        {target_path(ontology_file)}.{pattern}.subs \
+        {target_path(ontology_file)}.formatted.{ext(ontology_file)} \
+        > {output_file}"""
+    os.system(cmd)
+    click.echo(f"Output ontology written to: {output_file}")
+
+
+cli.add_command(build_instance_finders)
+cli.add_command(normalise_ontology)
+cli.add_command(find_axiom_instances)
+cli.add_command(make_substitutions)
+cli.add_command(apply_substitutions)
+
+if __name__ == '__main__':
+    cli()

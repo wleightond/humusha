@@ -281,17 +281,13 @@ if __name__ == "__main__":
             with open(cabalname, "a") as c:
                 c.write(cabal_executable(pattern_name))
         headers_added.append(pattern_name)
-    system("pwd")
-    system("cabal build --verbose=2")
+    # system("pwd")
+    system("cabal build 1>/dev/null 2>/dev/null")
     chdir("../..")
-    system("pwd")
-    print(f'{PATTERNS = }')
+    # system("pwd")
+    print(f'Configured patterns: {list(sorted(PATTERNS.keys()))}')
     for pattern_name in PATTERNS:
         sys_folder = listdir("build/finders/dist-newstyle/build")[0]
         ghc_folder = listdir(f"build/finders/dist-newstyle/build/{sys_folder}")[0]
-        cpbin = f"cp -v build/finders/dist-newstyle/build/{sys_folder}/{ghc_folder}/clsents-0.1.0.0/x/clsents{pattern_name}/build/clsents{pattern_name}/clsents{pattern_name} bin/find_{pattern_name}_instances"
+        cpbin = f"cp build/finders/dist-newstyle/build/{sys_folder}/{ghc_folder}/clsents-0.1.0.0/x/clsents{pattern_name}/build/clsents{pattern_name}/clsents{pattern_name} bin/find_{pattern_name}_instances"
         system(cpbin)
-
-
-# 000000001111111111222222222233333333334444444444555555555566666666667777777777
-# 234567890123456789012345678901234567890123456789012345678901234567890123456789

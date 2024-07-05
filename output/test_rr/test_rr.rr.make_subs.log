@@ -1,0 +1,11 @@
+matches:	('RR_f1', ['Person', 'POB'], '(forall (x) (if (Person x) (POB x)))\n')
+	('RR_f2', ['Employee', 'SOB'], '(forall (x) (if (Employee x) (SOB x)))\n')
+	('RR_f3', ['Employee', 'Person', 'OGD'], '(forall (x) (if (Employee x) (exists (y) (and (Person y)\n                                              (OGD x y)))))')
+valid_rrs(matches): [('RR', ['Employee', 'Person'], ['(forall (x) (if (Person x) (POB x)))\n', '(forall (x) (if (Employee x) (SOB x)))\n', '(forall (x) (if (Employee x) (exists (y) (and (Person y)\n                                              (OGD x y)))))'])]
+sub_rrs(rrs) [(['(forall (x) (if (Person x) (POB x)))\n', '(forall (x) (if (Employee x) (SOB x)))\n', '(forall (x) (if (Employee x) (exists (y) (and (Person y)\n                                              (OGD x y)))))'], ['(forall (x) (if (Employee x) (Person x)))'])]
+
+
+subs:(['(forall (x) (if (Person x) (POB x)))\n', '(forall (x) (if (Employee x) (SOB x)))\n', '(forall (x) (if (Employee x) (exists (y) (and (Person y)\n                                              (OGD x y)))))'], ['(forall (x) (if (Employee x) (Person x)))'])
+
+1 substitution generated.
+

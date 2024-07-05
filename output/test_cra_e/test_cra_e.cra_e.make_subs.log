@@ -1,0 +1,9 @@
+matches:	('CRA_e_f1', ['D', 'S', 'hasDataValue'], '(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))')
+valid_cra_es(matches): [('CRA_e', ['D', 'S', 'hasDataValue'], ['(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))'])]
+sub_cra_es(cra_es) [(['(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))'], ['(forall (x) (if (D x) (exists (y) (hasDataValue x y))))'])]
+
+
+subs:(['(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))'], ['(forall (x) (if (D x) (exists (y) (hasDataValue x y))))'])
+
+1 substitution generated.
+

@@ -1,0 +1,9 @@
+matches:	('RR_f1', ['SpatialObject', 'physical-object'], '(forall (a) (if (SpatialObject a) (physical-object a)))')
+valid_rrs(matches): []
+sub_rrs(rrs) []
+
+
+subs:
+
+No substitutions generated.
+

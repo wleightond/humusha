@@ -1,0 +1,10 @@
+matches:	('RR_f1', ['Living', 'physical-object'], '(forall (a) (if (Living a) (physical-object a)))\n')
+	('RR_f1', ['NonLiving', 'physical-object'], '(forall (a) (if (NonLiving a) (physical-object a)))')
+valid_rrs(matches): []
+sub_rrs(rrs) []
+
+
+subs:
+
+No substitutions generated.
+

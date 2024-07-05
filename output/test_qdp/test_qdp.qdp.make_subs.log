@@ -1,0 +1,9 @@
+matches:	('QDP_f1', ['E', 'Q', 'has-quality', 'K', 'has-quale', 'hasDataValue'], '(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)\n                                       (exists (z) (and (K z) (has-quale y z)\n                                                        (exists (v) (hasDataValue z\n                                                                                  v))))))))')
+valid_qdps(matches): [('QDP', ['E', 'Q', 'has-quality', 'K', 'has-quale', 'hasDataValue'], ['(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)\n                                       (exists (z) (and (K z) (has-quale y z)\n                                                        (exists (v) (hasDataValue z\n                                                                                  v))))))))'])]
+sub_qdps(qdps) [(['(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)\n                                       (exists (z) (and (K z) (has-quale y z)\n                                                        (exists (v) (hasDataValue z\n                                                                                  v))))))))'], ['(forall (x) (if (E x) (exists (y) (and (Q y) (hasDataValue x y)))))'])]
+
+
+subs:(['(forall (x) (if (E x) (exists (y) (and (Q y) (has-quality x y)\n                                       (exists (z) (and (K z) (has-quale y z)\n                                                        (exists (v) (hasDataValue z\n                                                                                  v))))))))'], ['(forall (x) (if (E x) (exists (y) (and (Q y) (hasDataValue x y)))))'])
+
+1 substitution generated.
+

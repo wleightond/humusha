@@ -22,7 +22,7 @@ utils:
 	cp $$(find . -name utils-0.1.0.0)/x/simple_parse/build/simple_parse/simple_parse ./simple_parse
 
 finders:
-	./build_instance_finders.py
+	./humusha build-instance-finders
 
 test-patts:
 	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./odpsub $$i ./test_files/test_$$i.clif; done

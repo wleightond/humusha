@@ -1,0 +1,12 @@
+matches:	('COP_f1', ['Bookloan', 'Book', 'participant-in', 'Person'], '(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))\n')
+	('PCOP_f2', ['Bookloan', 'perdurant'], '(forall (x) (if (Bookloan x) (perdurant x)))\n')
+	('PCOP_f1', ['Book', 'endurant'], '(forall (x) (if (Book x) (endurant x)))\n')
+	('PCOP_f1', ['Person', 'endurant'], '(forall (x) (if (Person x) (endurant x)))')
+valid_pcops(matches): [('PCOP', ['Bookloan', 'Book', 'participant-in', 'Person'], ['(forall (x) (if (Bookloan x) (perdurant x)))\n', '(forall (x) (if (Book x) (endurant x)))\n', '(forall (x) (if (Person x) (endurant x)))', '(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))\n'])]
+sub_pcops(pcops) [(['(forall (x) (if (Bookloan x) (perdurant x)))\n', '(forall (x) (if (Book x) (endurant x)))\n', '(forall (x) (if (Person x) (endurant x)))', '(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))\n'], ['(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))'])]
+
+
+subs:(['(forall (x) (if (Bookloan x) (perdurant x)))\n', '(forall (x) (if (Book x) (endurant x)))\n', '(forall (x) (if (Person x) (endurant x)))', '(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)\n                                                   (participant-in y x)))\n                                  (exists (z) (and (Person z)\n                                                   (participant-in z x))))))\n'], ['(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))'])
+
+1 substitution generated.
+

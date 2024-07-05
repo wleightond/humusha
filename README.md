@@ -13,27 +13,19 @@ To get a shell environment with the required packages (requires [nix](https://ni
 
 To make the binaries that find satisfied formulae
 
-    ./build_instance_finders.py
-    # OR
-    make finders
+    ./humusha build-instance-finders
 
 
-To run the full process for a given pattern, once instance finders and prep_onto are built:
+To run the full process for a given pattern, once instance finders and utils are built:
 
-    ./odpsub [pattern] [ontology]
+    ./humusha normalise-ontology  [ontology]
+    ./humusha find-axiom-instances [pattern] [ontology]
+    ./humusha make-substitutions [pattern] [ontology]
+    ./humusha apply-substitutions [pattern] [ontology]
 
-To test the patterns currently working:
 
-    for i in {cdp,cop,pcop,rr}; do ./odpsub $i test_$i.clif; done
-
-To manually perform a step of the process:
-
-for a given formula
-
-    cat ontofile | ./bin/[formula] > [formula]_instances
-
-for a given pattern
-
-    cat [instance files] | ./make_subs.py > subs
-    cat ontofile | ./prep_onto > outputonto
-    ./sub_patt.py subs output_onto
+./humusha build-instance-finders
+./humusha normalise-ontology  [ontology]
+./humusha find-axiom-instances [pattern] [ontology]
+./humusha make-substitutions [pattern] [ontology]
+./humusha apply-substitutions [pattern] [ontology]

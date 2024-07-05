@@ -1,0 +1,14 @@
+matches:	('RR_f1', ['observing-area', 'physical-object'], '(forall (a) (if (observing-area a) (physical-object a)))\n')
+	('RR_f1', ['sensor', 'physical-object'], '(forall (a) (if (sensor a) (physical-object a)))\n')
+	('RR_f1', ['atmospheric-surface-layer', 'physical-object'], '(forall (a) (if (atmospheric-surface-layer a) (physical-object a)))\n')
+	('RR_f2', ['agentive-social-object', 'social-object'], '(forall (a) (if (agentive-social-object a) (social-object a)))\n')
+	('RR_f2', ['information-object', 'non-agentive-social-object'], '(forall (a) (if (information-object a) (non-agentive-social-object a)))\n')
+	('RR_f2', ['non-agentive-social-object', 'social-object'], '(forall (a) (if (non-agentive-social-object a) (social-object a)))')
+valid_rrs(matches): []
+sub_rrs(rrs) []
+
+
+subs:
+
+No substitutions generated.
+

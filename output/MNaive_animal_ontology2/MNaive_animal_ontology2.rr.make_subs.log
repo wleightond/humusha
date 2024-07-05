@@ -1,0 +1,11 @@
+matches:	('RR_f1', ['agentive-physical-object', 'physical-object'], '(forall (a) (if (agentive-physical-object a) (physical-object a)))\n')
+	('RR_f1', ['OWLClass_acf0422d_386e_45b4_bde6_bd9447c310aa', 'agentive-physical-object'], '(forall (a) (if (OWLClass_acf0422d_386e_45b4_bde6_bd9447c310aa a) (agentive-physical-object a)))\n')
+	('RR_f1', ['OWLClass_d3823663_e900_40cb_a110_584151e8a7b6', 'physical-object'], '(forall (a) (if (OWLClass_d3823663_e900_40cb_a110_584151e8a7b6 a) (physical-object a)))')
+valid_rrs(matches): []
+sub_rrs(rrs) []
+
+
+subs:
+
+No substitutions generated.
+
