@@ -18,14 +18,12 @@ To make the binaries that find satisfied formulae
 
 To run the full process for a given pattern, once instance finders and utils are built:
 
+    ./humusha build-instance-finders
     ./humusha normalise-ontology  [ontology]
     ./humusha find-axiom-instances [pattern] [ontology]
     ./humusha make-substitutions [pattern] [ontology]
     ./humusha apply-substitutions [pattern] [ontology]
 
+## Licenses
+Software is licensed under the GPL v2.0 (source code from HETS is a critical component and is itself licensed this way); ontologies retain their original licenses.
 
-./humusha build-instance-finders
-./humusha normalise-ontology  [ontology]
-./humusha find-axiom-instances [pattern] [ontology]
-./humusha make-substitutions [pattern] [ontology]
-./humusha apply-substitutions [pattern] [ontology]
