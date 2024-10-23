@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+title: Humusha
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: William Leighton
+    family-names: Dawson
+    orcid: 'https://orcid.org/0000-0002-2799-3570'
+    affiliation: University of Cape Town
+repository-code: 'https://github.com/wleightond/humusha'
+abstract: >-
+  As ontologies find an ever-larger number of applications,
+  the diversity of domain ontologies and the requirements
+  for their intended uses increases as well, creating
+  challenges for interoperability and tooling. There are
+  often multiple ways of modelling the same knowledge, which
+  have coalesced into ontology patterns and modelling
+  styles, and pattern alignments for perceived to
+  semantically the same domain knowledge have been
+  identified. To facilitate interoperability and
+  applicability of foundational ontology-based modelling
+  choices with domain ontologies and so-called application
+  ontologies or conceptual data models, we propose a general
+  framework for the substitution of one pattern for another.
+  This can be applied by various methods, including purely
+  syntactic comparisons. A proof-of-concept tool that
+  implements such a syntax-based approach for FOL ontologies
+  encoded in CLIF is demonstrated and evaluated against a
+  set of DOLCE-aligned ontologies.
+keywords:
+  - Ontology Design Patterns
+  - Foundational Ontologies
+  - Application Ontologies
+  - Ontology Development
+  - Modelling Style
+license: GPL-2.0
+version: '1.0'
+preferred-citation:
+  authors:
+    - given-names: William Leighton
+      family-names: Dawson
+      orcid: 'https://orcid.org/0000-0002-2799-3570'
+      affiliation: University of Cape Town
+    - given-names: C. Maria
+      family-names: Keet
+      affiliation: University of Cape Town
+      orcid: 'https://orcid.org/0000-0002-8281-0853'
+  title: "Ontology Pattern Substitution: Toward their use for domain ontologies"
+  type: article
+  journal: "CEUR Workshop Proceedings"
+  year: 2024
+  license: CC-BY-4.0

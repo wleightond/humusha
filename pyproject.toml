@@ -1,0 +1,20 @@
+[project]
+name = "humusha"
+version = "1.0"
+description = "Ontology Design Pattern Substitution in FOL Ontologies Proof-of-Concept Tool"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+keywords = [
+  "Ontology Design Patterns", 
+  "Foundational Ontologies", 
+  "Application Ontologies", 
+  "Ontology Development", 
+  "Modelling Style"
+]
+authors = [
+  {name = "William Leighton Dawson"}
+]
+dependencies = [
+  "click"
+]
