@@ -14,8 +14,8 @@ import CommonLogic.Tools as Tools
 
 import Text.ParserCombinators.Parsec as Parsec
 
--- CDP_f1
-splitSents (Sentence (Quant_sent Universal [Name x_0] (Bool_sent (BinOp Implication (Atom_sent (Atom (Name_term a_0) [Term_seq (Name_term x_1)]) _) (Quant_sent Existential [Name y_0] (Bool_sent (Junction Conjunction [Atom_sent (Atom (Name_term b_0) [Term_seq (Name_term y_1)]) _,Atom_sent (Atom (Name_term c_0) [Term_seq (Name_term x_2),Term_seq (Name_term y_2)]) _]) _) _)) _) _))  | (x_0 == x_1) && (x_0 == x_2) && (y_0 == y_1) && (y_0 == y_2) = Just ("CDP_f1", [show a_0, show b_0, show c_0]) | otherwise = Nothing
+-- cdp_f1
+splitSents (Sentence (Quant_sent Universal [Name x_0] (Bool_sent (BinOp Implication (Atom_sent (Atom (Name_term a_0) [Term_seq (Name_term x_1)]) _) (Quant_sent Existential [Name y_0] (Bool_sent (Junction Conjunction [Atom_sent (Atom (Name_term b_0) [Term_seq (Name_term y_1)]) _,Atom_sent (Atom (Name_term c_0) [Term_seq (Name_term x_2),Term_seq (Name_term y_2)]) _]) _) _)) _) _))  | (x_0 == x_1) && (x_0 == x_2) && (y_0 == y_1) && (y_0 == y_2) = Just ("cdp_f1", [show a_0, show b_0, show c_0]) | otherwise = Nothing
 
 splitSents _ = Nothing
 
