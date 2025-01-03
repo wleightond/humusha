@@ -1,0 +1,11 @@
+COMMAND: DELETE
+(forall (x) (if (Person x) (POB x)))
+
+COMMAND: DELETE
+(forall (x) (if (Employee x) (SOB x)))
+
+COMMAND: DELETE
+(forall (x) (if (Employee x) (exists (y) (and (OGD x y)
+                                              (Person y)))))
+COMMAND: ADD
+(forall (x) (if (Employee x) (Person x)))

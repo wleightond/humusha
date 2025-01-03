@@ -1,10 +1,10 @@
 INSTANCE
-Just ("RR_f1",["Person","POB"])
+Just ("rr_f1",["Person","POB"])
 (forall (x) (if (Person x) (POB x)))
 INSTANCE
-Just ("RR_f2",["Employee","SOB"])
+Just ("rr_f2",["Employee","SOB"])
 (forall (x) (if (Employee x) (SOB x)))
 INSTANCE
-Just ("RR_f3",["Employee","Person","OGD"])
-(forall (x) (if (Employee x) (exists (y) (and (Person y)
-                                              (OGD x y)))))
+Just ("rr_f3",["Employee","Person","OGD"])
+(forall (x) (if (Employee x) (exists (y) (and (OGD x y)
+                                              (Person y)))))

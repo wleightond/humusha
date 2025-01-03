@@ -1,0 +1,18 @@
+
+Received 3 axioms to delete.
+
+Deleting axiom:
+(forall (x) (if (Person x) (agentive-physical-object x)))
+
+Deleting axiom:
+(forall (x) (if (Employee x) (agentive-social-object x)))
+
+Deleting axiom:
+(forall (x) (if (Employee x) (exists (y) (and (generically-dependent-on x
+                                                                        y)
+                                              (Person y)))))
+
+Received 1 axioms to add.
+
+Adding axiom:
+(forall (x) (if (Employee x) (Person x)))

@@ -1,0 +1,1 @@
+(forall (x) (if (D x) (exists (y) (hasDataValue x y))))

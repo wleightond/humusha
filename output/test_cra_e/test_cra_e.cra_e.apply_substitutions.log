@@ -1,0 +1,11 @@
+
+Received 1 axioms to delete.
+
+Deleting axiom:
+(forall (x) (if (D x) (exists (y) (and (S x y)
+                                       (exists (z) (hasDataValue y z))))))
+
+Received 1 axioms to add.
+
+Adding axiom:
+(forall (x) (if (D x) (exists (y) (hasDataValue x y))))

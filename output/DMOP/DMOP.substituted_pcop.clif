@@ -1,0 +1,1585 @@
+(forall (a) (not (Nothing a)))
+(forall (a) (not (and (Thing a) (Datatype a))))
+(forall (a) (if ("AverageAbsoluteFeatureCorrelation" a) (Thing a)))
+(forall (a) (if ("AverageCategoricalFeaturePairsMutualInformation" a) (Thing a)))
+(forall (a) (if ("AverageFeatureEntropy" a) (Thing a)))
+(forall (a) (if ("AverageMutualInformation" a) (Thing a)))
+(forall (a) (if ("BetweenGroupsSumSquaresCrossProducts" a) (Thing a)))
+(forall (a) (if ("CanonicalCorrelationBestLinearCombination" a) (Thing a)))
+(forall (a) (if ("CategoricalFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("CategoricalLabeledDataSetCharacteristic" a) (Thing a)))
+(forall (a) (if ("ClassAbsoluteFrequencies" a) (Thing a)))
+(forall (a) (if ("ClassCovarianceMatrices" a) (Thing a)))
+(forall (a) (if ("ClassEntropy" a) (Thing a)))
+(forall (a) (if ("ClassRelativeFrequencies" a) (Thing a)))
+(forall (a) (if ("ContinuousFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("ContinuousLabeledDataSetCharacteristics" a) (Thing a)))
+(forall (a) (if ("DataCharacteristic" a) (Thing a)))
+(forall (a) (if ("DataSetCharacteristic" a) (Thing a)))
+(forall (a) (if ("EigenValuesLinearDiscriminantFunctions" a) (Thing a)))
+(forall (a) (if ("ErrorRateOf1NNClassifier" a) (Thing a)))
+(forall (a) (if ("ErrorRateOfLinearClassifierLP" a) (Thing a)))
+(forall (a) (if ("FeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("FeatureCorrelation" a) (Thing a)))
+(forall (a) (if ("FeatureEntropy" a) (Thing a)))
+(forall (a) (if ("FeatureFrequentValue" a) (Thing a)))
+(forall (a) (if ("FeatureHOutlier" a) (Thing a)))
+(forall (a) (if ("FeatureMaximumValue" a) (Thing a)))
+(forall (a) (if ("FeatureMeanValue" a) (Thing a)))
+(forall (a) (if ("FeatureMinimumValue" a) (Thing a)))
+(forall (a) (if ("FeatureModalValue" a) (Thing a)))
+(forall (a) (if ("FeatureMutualInformationPerClass" a) (Thing a)))
+(forall (a) (if ("FeatureRareValue" a) (Thing a)))
+(forall (a) (if ("FeatureStandardDeviation" a) (Thing a)))
+(forall (a) (if ("FeatureValueFrequencies" a) (Thing a)))
+(forall (a) (if ("FeatureValueFrequenciesPerClass" a) (Thing a)))
+(forall (a) (if ("FeatureVeryFrequentValue" a) (Thing a)))
+(forall (a) (if ("FeatureVeryRareValue" a) (Thing a)))
+(forall (a) (if ("LabeledDataSetCharacteristic" a) (Thing a)))
+(forall (a) (if ("MaximumFeatureEfficiency" a) (Thing a)))
+(forall (a) (if ("MaximumFishersDiscriminantRatio" a) (Thing a)))
+(forall (a) (if ("MinimumSumOfErrorDistanceByLP" a) (Thing a)))
+(forall (a) (if ("NoiseSignalRatio" a) (Thing a)))
+(forall (a) (if ("NonLinearityOf1NNClassifier" a) (Thing a)))
+(forall (a) (if ("NonLinearityOfLinearClassifierLP" a) (Thing a)))
+(forall (a) (if ("NumberOfCategoricalFeatures" a) (Thing a)))
+(forall (a) (if ("NumberOfClasses" a) (Thing a)))
+(forall (a) (if ("NumberOfContinuousFeatures" a) (Thing a)))
+(forall (a) (if ("NumberOfDistinctValues" a) (Thing a)))
+(forall (a) (if ("NumberOfFeatures" a) (Thing a)))
+(forall (a) (if ("NumberOfHOutliers" a) (Thing a)))
+(forall (a) (if ("NumberOfInstances" a) (Thing a)))
+(forall (a) (if ("NumberOfInstancesPerFeature" a) (Thing a)))
+(forall (a) (if ("NumberOfMissingValues" a) (Thing a)))
+(forall (a) (if ("ProportionOfBoundaryPoints" a) (Thing a)))
+(forall (a) (if ("ProportionOfCategoricalFeatures" a) (Thing a)))
+(forall (a) (if ("ProportionOfHOutliers" a) (Thing a)))
+(forall (a) (if ("ProportionOfMissingValues" a) (Thing a)))
+(forall (a) (if ("ProportionPointsWithRetainedAdherence" a) (Thing a)))
+(forall (a) (if ("RatioOfAverageIntraInterDistances" a) (Thing a)))
+(forall (a) (if ("TotalSumSquaresCrossProducts" a) (Thing a)))
+(forall (a) (if ("VolumeOfOverlapRegion" a) (Thing a)))
+(forall (a) (if ("WithinGroupsSumSquaresCrossProducts" a) (Thing a)))
+(forall (a) (if ("DistanceCharacterizationBetweenClusters" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AlgorithmAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AlgorithmParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationDiscoveryAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationDiscoveryTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationPatternSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationPatternSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AttributeValueTableFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AverageLinkModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AverageReliefFeatureWeight" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AverageSVMFeatureWeight" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BaselineClassifier" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BaselineRegressor" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesNetAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesNetModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesNetModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesianAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesianModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesianModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesianNetwork" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BayesianStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BiasVarianceProfile" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BinarySplit-MultiwaySplit" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Binomial-N" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Binomial-P" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BinomialDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Blind-Informed" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BlindSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Bottom-UpClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BottomKPctRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BottomKRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#BranchAndBound" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#C4.5CrispTreeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#C4.5ProbTreeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#C4.5RuleModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CARTClassificationModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CHAIDModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CN2Model" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CSVC-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CapacityParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CardinalityReductionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalLabeledDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalTargetRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Characteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ChiSquared-Nu" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassBalancingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassBasedModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassCondMeanMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassCondProbMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassCondProbabilityAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassCondVarianceMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassPriorProbabilityAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassPriorVector" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModelingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationProblemType" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationRuleInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationRuleInductionAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationTreeInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClassificationTreeInductionAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringBasedModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModelingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringProblemType" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ClusteringTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CombinationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ComplementClassCondProbMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ComplementNaiveBayesModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CompleteLinkModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ComputationalComplexityFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ComputationalComplexityMeasure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Constraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousLabeledDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousOptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousOptimizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousParametricDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousTargetRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousUniformDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ConvexOptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CoordinateSystem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CoreDM-Task" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CrossValidation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Data" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-DataClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Experiment" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Hypothesis" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-HypothesisClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Model" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-ModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Operation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Operator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-PatternSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-PatternSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Process" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Software" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Task" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DM-Workflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataAbstractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataAbstractionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataCleaningTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataProcessingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataProcessingAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataProcessingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataProcessingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataProcessingWorkflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataReductionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataRetrievalTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataTable" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataTableClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataTransformationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataType" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionBoundary" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionCriterion" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionTarget" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionTree" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionTreeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DecisionTreeModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DependencyModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DependencyModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DependencyModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DependencyModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptiveModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptiveModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptiveModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptiveModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DescriptiveModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Deterministic-Stochastic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DeterministicSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DeviationDescription" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DeviationDetectionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DimensionalityReductionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteOptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteOptimizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteParametricDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteUniformDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscretizationBasedDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantAnalysisAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantFunctionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantFunctionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantFunctionModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminantModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminativeAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminativeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscriminativeModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DissociationDiscoveryTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DissociationPatternSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DissociationPatternSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DistanceFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DistanceOrSimilarityFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DistributionParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Eager-Lazy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#EarlyStoppingStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#EmbeddedFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#EntropyBasedFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#EntropyBasedFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#EvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ExactContinuousOptimizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Exhaustive-NonExhaustive" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ExploratoryDataAnalysisTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Exponential-lambda" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ExternalValidityModelFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature-BasedModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureClassMutualInformation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureDiscretizationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureDiscretizationOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureDiscretizationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureEvaluationContext" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureEvaluationTarget" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureExtractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureExtractionAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureExtractionOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureExtractionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureLinearTransformAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureLogTransformAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureNormalizationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureRankingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureRankingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSelectionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSelectionOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSelectionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSetEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSqrtTansformAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSquashToIntervalAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureStandardizationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureSubsetWeightingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureTransformationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureTransformationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureWeightingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureWeightingAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureWeightingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureWeightingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeedforwardLayeredNNModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeedforwardNNAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeedfowardLayeredNNModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Filter-Wrapper-Embedded" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FilterFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FirstOrderLogicStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FishersLinearDiscriminantModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FormalExpression" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ForwardWrapperFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FunctionParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GAwithFSSEvaluatorFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GAwithWrappedLearnerFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Gauss-CovarianceMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Gauss-MeanVector" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GaussianKernelBasedDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GaussianKernelSVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GenToSpec-SpecToGen" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GeneralizedAdditiveModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GenerateAndSelectStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GenerativeAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GenerativeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GenerativeModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GeneticFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GeneticSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Graph" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GraphTheoreticClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GraphicalModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#GreedySearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HandlingOfCategoricalFeatures" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HandlingOfClassificationCosts" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HandlingOfContinuousFeatures" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HandlingOfInstanceWeights" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HardMarginSVC-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HeuristicBestFirstSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HeuristicContinuousOptimizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HierarchicalClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HierarchicalClusteringModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HierarchicalClusteringModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HierarchicalClusteringModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HighBias-HighVariance" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HillClimbing" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HingeLoss" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisApplicationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisApplicationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisComplexityControlStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisEvaluationMeasure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisEvaluationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisProcessingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisProcessingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#HypothesisTestBasedFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ICA-OptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ID3Model" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IO-Class" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IO-Object" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IncrementalClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IncrementalReducedErrorPruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InductionAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InductionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InductionWorkflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InformedSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Instance" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Instance-BasedModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InstanceRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InstanceWeightVector" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#InternalValidityModelFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Interpretability" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IntervalFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IntervalFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IntervalFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ItemReassignmentToCluster" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ItemSequenceTableFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ItemSetTableFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IterativeImprovementSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#K-Means-Parameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#K-MeansAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#K-MeansModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#K-MeansModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KNN-Parameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KNearestNeighborAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KNearestNeighborModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KNearestNeighborModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KernelEuclideanDistance" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KernelFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KernelTypeParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#KernelWeightVector" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LabeledDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LabeledDataSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LabeledDataTable" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LeafSizeParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LearnerBasedFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LearnerFreeFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LearningPolicy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Linear-NonLinear" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearBoundary" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearCombination" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearDiscriminantModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearEqualityConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearInequalityConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearRegressionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LinearSVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#List" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LocalBeamSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LocalDelimitationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LocalPiecewiseModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogLikelihood" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogicalExpression" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogicalModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogicalModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogicalStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LogisticRegressionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Low-Medium-High" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ManifoldFeatureExtractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MarkovNetwork" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MathematicalExpression" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MathematicalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MathematicalModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MathematicalStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MaxRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MeanValueRegressor" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Measure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MeasureClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MedianValueRegressor" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MetricLearningApproach" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MinRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Minimize-Maximize" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Minimum-VarianceModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MissingValueImputationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MissingValueImputationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MixtureModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelAggregationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelAggregationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelApplicationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelApplicationOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelApplicationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelApplicationWorkflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelComplexity" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelComplexityFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelComplexityMeasure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelEvaluationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelEvaluationMeasure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelEvaluationOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelEvaluationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelParameterCount" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelParameterMagnitude" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelPerformance" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelProcessingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelProcessingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelProcessingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelProcessingWorkflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelPruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelPruningTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultilayerPerceptronAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Multinomial-N" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Multinomial-Pvector" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultinomialDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateLearnerBasedFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateLearnerFreeFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateNormalDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#MultivariateTreeInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NBTreeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NNParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesDiscreteModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesKernelModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesMultinomialModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NaiveBayesNormalModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NeighborhoodRange" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NeuralNetworkAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NeuralNetworkModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NeuralNetworkModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NoiseReductionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Non-IncrementalClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonConvexOptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonLinearRegressionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonParametricModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonParametricTest" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonParametricTestBasedFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonProbabilisticModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearBoundary" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearCombination" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearPolynomialKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearPositiveSemidefiniteKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearSVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonlinearSVCModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonparametricDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NonpositiveSemidefiniteKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NuSVC-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInternalNodes" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfLeaves" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfProbabilities" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfRules" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfSupportVectors" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfWeights" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OneClassSVC-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OpParameterSetting" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OperatorParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Optimal-Suboptimal" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OptimizationProblem" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OptimizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OrderDependency" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OrdinalFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OrdinalFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#OrdinalFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Orthogonal-NonOrthogonal" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PARTModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PRISMModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Parameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ParametricDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ParametricModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ParametricTest" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ParametricTestBasedFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PartitionalClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PartitionalClusteringModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PartitionalClusteringModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PartitionalClusteringModelParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PathBasedSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternDiscoveryAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternDiscoveryTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternProcessingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternPruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternPruningTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetApplicationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetApplicationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetBasedClassifModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetBasedClassificationModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetBasedModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetEvaluationMeasure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetEvaluationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternSetProcessingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PerceptronModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PerformanceBoundsAnalysis" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PiecewiseLinearBoundary" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PolynomialKernelSVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PositiveSemidefiniteKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PosteriorProbabilityAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModelingAlgorithmCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PredictiveModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PrimitiveType" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilisticClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilisticModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilisticModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilityDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilityDistributionRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilityEstimationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilityEstimationModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProbabilityEstimationTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ProjectiveFeatureExtractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PropositionalDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PropositionalLogicStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PropositionalRuleSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PruningStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuadraticConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuadraticDiscriminantModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuadraticEqualityConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuadraticInequalityConstraint" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuadraticProgramming" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QualitativeFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QuantitativeFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RM-OperatorParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ROperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RadialBasisFunctionNetworkAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RandomComponent" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RandomTreeModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RangeOfNeighborhood" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RapidMinerOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RecoveryOfPursuit" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RecurrentNNAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModelingOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegressionTreeInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegularizationParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegularizationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegularizedClassificationModelEvalFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RegularizedDiscriminantModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RelOp" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RelationalDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RelativeValidityModelFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RelaxationStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RipperModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Rule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RuleEnsembleInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RuleInductionStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RulePruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RuleSetModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RuleSetModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#RulesetPruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SVC-Algorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SVC-Parameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SVCModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SampleHandlingForRuleInduction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SampleHandlingStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ScopeOfSelection" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SearchDirection" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SearchStrategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SegmentationModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SelfConfiguringNNAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SemiSupervisedInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SetCoveringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SetOfClassCondCovarianceMatrices" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SetOfSplitThresholds" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SetOfWeightVectors" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SetOrBag" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SharedCovarianceMatrix" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SigmoidKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SimilarityBasedModelStructure" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SimilarityFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SimulatedAnnealing" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SingleConditionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SingleFeature-FeatureSubset" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SingleFeatureEvaluationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SingleFeatureWeightingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SingleLinkModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SlipperModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SplineModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SplitEvalFunctionParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SplitTypeParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SquaredError" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StatisticBasedFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StatisticalTest" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StochasticSearch" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Strategy" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredFeatureCharacteristic" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredFeatureValue" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredKernel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredKernelSVCModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredLabeledDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredPredictionModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredPredictionModelClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredPredictionModelingAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredPredictionModelingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredPredictionTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#StructuredType" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SubgroupDescription" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SubgroupDiscoveryTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SubsamplingTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SumOfSquaredWeights" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SumOfWeights" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SupervisedDiscretizationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SupervisedFeatureExtractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#SupervisedInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TableFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TargetFeature" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TargetRelatedAssumption" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TimeSeriesTableFormat" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToClassImbalance" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToCorrelatedFeatures" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToHighDimensionality" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToIrrelevantFeatures" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToMissingValues" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToNoise" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ToleranceToWideDataSets" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Top-DownClusteringAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TopKPctRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TopKRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TrainingSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TransformationFunction" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Tree" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreeBasedRuleInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreeBranchingFactor" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreeDepth" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreeInductionParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreePruningAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#TreePruningParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Tuple" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Uniform-K" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UniquenessOfSolution" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Univariate-Multivariate" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateLearnerBasedFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateLearnerFreeFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateNormalDensityEstimation" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnivariateTreeInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnlabeledDataSet" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnlabeledDataSetClass" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnlabeledDataTable" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnsupervisedDiscretizationAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnsupervisedFeatureExtractionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnsupervisedInductionAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UtilityAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UtilityOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UtilityTask" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ValueSearchStopRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ValueThresholdRule" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#VotedPerceptronModel" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Weka-OperatorParameter" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WekaOperator" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Workflow" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WorkflowEntity" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WorkflowTemplate" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WorkflowVariable" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WrapperFSAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#WrapperFWAlgorithm" a) (Thing a)))
+(forall (a) (if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Yes-No-Unknown" a) (Thing a)))
+(forall (a) (if ("AssociationRuleGenerationAlgorithm" a) (Thing a)))
+(forall (a) (if ("SubgroupDiscoveryAlgorithm" a) (Thing a)))
+(forall (a) (if ("abstract" a) (Thing a)))
+(forall (a) (if ("abstract-quality" a) (Thing a)))
+(forall (a) (if ("abstract-region" a) (Thing a)))
+(forall (a) (if ("accomplishment" a) (Thing a)))
+(forall (a) (if ("achievement" a) (Thing a)))
+(forall (a) (if ("endurant" a) (Thing a)))
+(forall (a) (if ("event" a) (Thing a)))
+(forall (a) (if ("non-physical-endurant" a) (Thing a)))
+(forall (a) (if ("non-physical-object" a) (Thing a)))
+(forall (a) (if ("particular" a) (Thing a)))
+(forall (a) (if ("perdurant" a) (Thing a)))
+(forall (a) (if ("process" a) (Thing a)))
+(forall (a) (if ("quale" a) (Thing a)))
+(forall (a) (if ("quality" a) (Thing a)))
+(forall (a) (if ("quality-space" a) (Thing a)))
+(forall (a) (if ("region" a) (Thing a)))
+(forall (a) (if ("spatio-temporal-particular" a) (Thing a)))
+(forall (a) (if ("state" a) (Thing a)))
+(forall (a) (if ("stative" a) (Thing a)))
+(forall (a) (if ("action" a) (Thing a)))
+(forall (a) (if ("activity" a) (Thing a)))
+(forall (a) (if ("cognitive-state" a) (Thing a)))
+(forall (a) (if ("collection" a) (Thing a)))
+(forall (a) (if ("communication-event" a) (Thing a)))
+(forall (a) (if ("concept" a) (Thing a)))
+(forall (a) (if ("course" a) (Thing a)))
+(forall (a) (if ("description" a) (Thing a)))
+(forall (a) (if ("description-role" a) (Thing a)))
+(forall (a) (if ("indicator" a) (Thing a)))
+(forall (a) (if ("information-encoding-system" a) (Thing a)))
+(forall (a) (if ("information-object" a) (Thing a)))
+(forall (a) (if ("logical-role" a) (Thing a)))
+(forall (a) (if ("method" a) (Thing a)))
+(forall (a) (if ("non-agentive-social-object" a) (Thing a)))
+(forall (a) (if ("parameter" a) (Thing a)))
+(forall (a) (if ("path" a) (Thing a)))
+(forall (a) (if ("physical-realization" a) (Thing a)))
+(forall (a) (if ("plan" a) (Thing a)))
+(forall (a) (if ("project" a) (Thing a)))
+(forall (a) (if ("role" a) (Thing a)))
+(forall (a) (if ("social-object" a) (Thing a)))
+(forall (a) (if ("task" a) (Thing a)))
+(forall (a) (if ("technique" a) (Thing a)))
+(forall (a) (if ("boolean" a) (Datatype a)))
+(forall (a) (if ("DATA" a) (Datatype a)))
+(forall (a) (if ("hexBinary" a) (Datatype a)))
+(forall (a) (if ("base64Binary" a) (Datatype a)))
+(forall (a) (if ("date" a) (Datatype a)))
+(forall (a) (if ("time" a) (Datatype a)))
+(forall (a) (if ("gYearMonth" a) (Datatype a)))
+(forall (a) (if ("gYear" a) (Datatype a)))
+(forall (a) (if ("gMonthDay" a) (Datatype a)))
+(forall (a) (if ("gDay" a) (Datatype a)))
+(forall (a) (if ("gMonth" a) (Datatype a)))
+(forall (a) (if ("duration" a) (Datatype a)))
+(forall (a) (if ("dateTime" a) (Datatype a)))
+(forall (a) (if ("dateTimeStamp" a) (Datatype a)))
+(forall (a) (if ("anyURI" a) (Datatype a)))
+(forall (a) (if ("integer" a) (Datatype a)))
+(forall (a) (if ("negativeInteger" a) (Datatype a)))
+(forall (a) (if ("nonNegativeInteger" a) (Datatype a)))
+(forall (a) (if ("nonPositiveInteger" a) (Datatype a)))
+(forall (a) (if ("positiveInteger" a) (Datatype a)))
+(forall (a) (if ("decimal" a) (Datatype a)))
+(forall (a) (if ("double" a) (Datatype a)))
+(forall (a) (if ("float" a) (Datatype a)))
+(forall (a) (if ("long" a) (Datatype a)))
+(forall (a) (if ("int" a) (Datatype a)))
+(forall (a) (if ("short" a) (Datatype a)))
+(forall (a) (if ("byte" a) (Datatype a)))
+(forall (a) (if ("unsignedLong" a) (Datatype a)))
+(forall (a) (if ("unsignedInt" a) (Datatype a)))
+(forall (a) (if ("unsignedShort" a) (Datatype a)))
+(forall (a) (if ("unsignedByte" a) (Datatype a)))
+(forall (a) (if ("string" a) (Datatype a)))
+(forall (a) (if ("NCName" a) (Datatype a)))
+(forall (a) (if ("QName" a) (Datatype a)))
+(forall (a) (if ("Name" a) (Datatype a)))
+(forall (a) (if ("NMTOKEN" a) (Datatype a)))
+(forall (a) (if ("NMTOKENS" a) (Datatype a)))
+(forall (a) (if ("token" a) (Datatype a)))
+(forall (a) (if ("language" a) (Datatype a)))
+(forall (a) (if ("normalizedString" a) (Datatype a)))
+(forall (a) (if ("NOTATION" a) (Datatype a)))
+(forall (a) (if ("ENTITY" a) (Datatype a)))
+(forall (a) (if ("ENTITIES" a) (Datatype a)))
+(forall (a) (if ("ID" a) (Datatype a)))
+(forall (a) (if ("IDREF" a) (Datatype a)))
+(forall (a) (if ("IDREFS" a) (Datatype a)))
+(forall (a) (if ("real" a) (Datatype a)))
+(forall (a) (if ("rational" a) (Datatype a)))
+(forall (a) (if ("XMLLiteral" a) (Datatype a)))
+(forall (a) (if ("Literal" a) (Datatype a)))
+(forall (a) (if ("anyType" a) (Datatype a)))
+(if ("hasDataValue" a b) (topDataProperty a b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDefaultValue" a
+                                                                         b) (topDataProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasExplicitFeatureSpace" a
+                                                                                 b) (topDataProperty a
+                                                                                                     b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFixedThreshold" a
+                                                                           b) (topDataProperty a
+                                                                                               b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMaximumValue" a
+                                                                         b) (topDataProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMeanValue" a
+                                                                      b) (topDataProperty a
+                                                                                          b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMinimumValue" a
+                                                                         b) (topDataProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasNumberOfConstraints" a
+                                                                                b) (topDataProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasNumberOfSupportVectors" a
+                                                                                   b) (topDataProperty a
+                                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterKey" a
+                                                                         b) (topDataProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPolynomialDegree" a
+                                                                             b) (topDataProperty a
+                                                                                                 b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isAdmissible" a
+                                                                      b) (topDataProperty a
+                                                                                          b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isComplete" a
+                                                                    b) (topDataProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isMultiAlgorithmOperator" a
+                                                                                  b) (topDataProperty a
+                                                                                                      b))
+(if ("topDataProperty" a b) (topDataProperty a b))
+(if ("hasDataValue" a b) (not (bottomDataProperty a b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDefaultValue" a
+                                                                         b) (not (bottomDataProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasExplicitFeatureSpace" a
+                                                                                 b) (not (bottomDataProperty a
+                                                                                                             b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFixedThreshold" a
+                                                                           b) (not (bottomDataProperty a
+                                                                                                       b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMaximumValue" a
+                                                                         b) (not (bottomDataProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMeanValue" a
+                                                                      b) (not (bottomDataProperty a
+                                                                                                  b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMinimumValue" a
+                                                                         b) (not (bottomDataProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasNumberOfConstraints" a
+                                                                                b) (not (bottomDataProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasNumberOfSupportVectors" a
+                                                                                   b) (not (bottomDataProperty a
+                                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterKey" a
+                                                                         b) (not (bottomDataProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPolynomialDegree" a
+                                                                             b) (not (bottomDataProperty a
+                                                                                                         b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isAdmissible" a
+                                                                      b) (not (bottomDataProperty a
+                                                                                                  b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isComplete" a
+                                                                    b) (not (bottomDataProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isMultiAlgorithmOperator" a
+                                                                                  b) (not (bottomDataProperty a
+                                                                                                              b)))
+(if ("topDataProperty" a b) (not (bottomDataProperty a b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#achieves" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#addresses" a
+                                                                   b) (topObjectProperty a
+                                                                                         b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#assumes" a
+                                                                 b) (topObjectProperty a
+                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#executes" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#handlesFeatureType" a
+                                                                            b) (topObjectProperty a
+                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasCombinationFunction" a
+                                                                                b) (topObjectProperty a
+                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComplexityComponent" a
+                                                                                b) (topObjectProperty a
+                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComponent" a
+                                                                      b) (topObjectProperty a
+                                                                                            b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComponentStep" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComputationalComplexityFunction" a
+                                                                                            b) (topObjectProperty a
+                                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasConstraint" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDataType" a
+                                                                     b) (topObjectProperty a
+                                                                                           b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionBoundary" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionCriterion" a
+                                                                              b) (topObjectProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionRule" a
+                                                                         b) (topObjectProperty a
+                                                                                               b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionStrategy" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionTarget" a
+                                                                           b) (topObjectProperty a
+                                                                                                 b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDensityEstimation" a
+                                                                              b) (topObjectProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistanceFunction" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistanceOrSimilarityFunction" a
+                                                                                         b) (topObjectProperty a
+                                                                                                               b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistinctValue" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistributionParameter" a
+                                                                                  b) (topObjectProperty a
+                                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDualForm" a
+                                                                     b) (topObjectProperty a
+                                                                                           b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasEvaluationFunction" a
+                                                                               b) (topObjectProperty a
+                                                                                                     b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeature" a
+                                                                    b) (topObjectProperty a
+                                                                                          b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeatureEvaluator" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeatureTestEvaluator" a
+                                                                                 b) (topObjectProperty a
+                                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFirstSubprocess" a
+                                                                            b) (topObjectProperty a
+                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasHypothesisComplexityControlStrategy" a
+                                                                                                b) (topObjectProperty a
+                                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasHypothesisStructure" a
+                                                                                b) (topObjectProperty a
+                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasInput" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasInstance" a
+                                                                     b) (topObjectProperty a
+                                                                                           b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasKernelFunction" a
+                                                                           b) (topObjectProperty a
+                                                                                                 b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasLeafPredictor" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMainTable" a
+                                                                      b) (topObjectProperty a
+                                                                                            b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMember" a
+                                                                   b) (topObjectProperty a
+                                                                                         b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasModalValue" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasModelComplexityMeasure" a
+                                                                                   b) (topObjectProperty a
+                                                                                                         b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasObjectiveFunction" a
+                                                                              b) (topObjectProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimalityLevel" a
+                                                                            b) (topObjectProperty a
+                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationGoal" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationProblem" a
+                                                                                b) (topObjectProperty a
+                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationStrategy" a
+                                                                                 b) (topObjectProperty a
+                                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOutput" a
+                                                                   b) (topObjectProperty a
+                                                                                         b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameter" a
+                                                                      b) (topObjectProperty a
+                                                                                            b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterRole" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterSetting" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPart" a
+                                                                 b) (topObjectProperty a
+                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPerformanceComponent" a
+                                                                                 b) (topObjectProperty a
+                                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPostprocessor" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPreprocessor" a
+                                                                         b) (topObjectProperty a
+                                                                                               b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasRecoveryOfPursuit" a
+                                                                              b) (topObjectProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasRelationalOperator" a
+                                                                               b) (topObjectProperty a
+                                                                                                     b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasScopeOfSelection" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSearchDirection" a
+                                                                            b) (topObjectProperty a
+                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSearchGuidance" a
+                                                                           b) (topObjectProperty a
+                                                                                                 b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSelfTunedHyperParameter" a
+                                                                                    b) (topObjectProperty a
+                                                                                                          b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSimilarityFunction" a
+                                                                               b) (topObjectProperty a
+                                                                                                     b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSink" a
+                                                                 b) (topObjectProperty a
+                                                                                       b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSource" a
+                                                                   b) (topObjectProperty a
+                                                                                         b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasStopCriterion" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSubprocess" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTable" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTableFormat" a
+                                                                        b) (topObjectProperty a
+                                                                                              b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTargetFeature" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTargetLearner" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasUncertaintyLevel" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasValueDomain" a
+                                                                        b) (topObjectProperty a
+                                                                                              b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasVariable" a
+                                                                     b) (topObjectProperty a
+                                                                                           b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#implements" a
+                                                                    b) (topObjectProperty a
+                                                                                          b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#interactsWithLearnerAs" a
+                                                                                b) (topObjectProperty a
+                                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isComponentOf" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isImplementedBy" a
+                                                                         b) (topObjectProperty a
+                                                                                               b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isParameterOf" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isPartOf" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSpecifiedInputOf" a
+                                                                            b) (topObjectProperty a
+                                                                                                  b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSpecifiedOutputOf" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSubprocessOf" a
+                                                                        b) (topObjectProperty a
+                                                                                              b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSubsampleOf" a
+                                                                       b) (topObjectProperty a
+                                                                                             b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isTargetFeatureOf" a
+                                                                           b) (topObjectProperty a
+                                                                                                 b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#realizes" a
+                                                                  b) (topObjectProperty a
+                                                                                        b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#requiresDataType" a
+                                                                          b) (topObjectProperty a
+                                                                                                b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#setsValueOf" a
+                                                                     b) (topObjectProperty a
+                                                                                           b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#solves" a
+                                                                b) (topObjectProperty a
+                                                                                      b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#specifiesInputClass" a
+                                                                             b) (topObjectProperty a
+                                                                                                   b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#specifiesOutputClass" a
+                                                                              b) (topObjectProperty a
+                                                                                                    b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#step1" a
+                                                               b) (topObjectProperty a
+                                                                                     b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#step2" a
+                                                               b) (topObjectProperty a
+                                                                                     b))
+(if ("abstract-location" a b) (topObjectProperty a b))
+(if ("abstract-location-of" a b) (topObjectProperty a b))
+(if ("atomic-part" a b) (topObjectProperty a b))
+(if ("atomic-part-of" a b) (topObjectProperty a b))
+(if ("boundary" a b) (topObjectProperty a b))
+(if ("boundary-of" a b) (topObjectProperty a b))
+(if ("exact-location" a b) (topObjectProperty a b))
+(if ("exact-location-of" a b) (topObjectProperty a b))
+(if ("generic-constituent" a b) (topObjectProperty a b))
+(if ("generic-constituent-of" a b) (topObjectProperty a b))
+(if ("generic-dependent" a b) (topObjectProperty a b))
+(if ("generic-location" a b) (topObjectProperty a b))
+(if ("generic-location-of" a b) (topObjectProperty a b))
+(if ("generically-dependent-on" a b) (topObjectProperty a b))
+(if ("has-quale" a b) (topObjectProperty a b))
+(if ("has-quality" a b) (topObjectProperty a b))
+(if ("immediate-relation" a b) (topObjectProperty a b))
+(if ("immediate-relation-i" a b) (topObjectProperty a b))
+(if ("inherent-in" a b) (topObjectProperty a b))
+(if ("mediated-relation" a b) (topObjectProperty a b))
+(if ("mediated-relation-i" a b) (topObjectProperty a b))
+(if ("overlaps" a b) (topObjectProperty a b))
+(if ("part" a b) (topObjectProperty a b))
+(if ("part-of" a b) (topObjectProperty a b))
+(if ("proper-part" a b) (topObjectProperty a b))
+(if ("proper-part-of" a b) (topObjectProperty a b))
+(if ("q-location" a b) (topObjectProperty a b))
+(if ("q-location-of" a b) (topObjectProperty a b))
+(if ("quale-of" a b) (topObjectProperty a b))
+(if ("admits" a b) (topObjectProperty a b))
+(if ("admitted-by" a b) (topObjectProperty a b))
+(if ("co-participates-with" a b) (topObjectProperty a b))
+(if ("component" a b) (topObjectProperty a b))
+(if ("component-of" a b) (topObjectProperty a b))
+(if ("covered-by" a b) (topObjectProperty a b))
+(if ("covers" a b) (topObjectProperty a b))
+(if ("d-used-by" a b) (topObjectProperty a b))
+(if ("d-uses" a b) (topObjectProperty a b))
+(if ("defined-by" a b) (topObjectProperty a b))
+(if ("defines" a b) (topObjectProperty a b))
+(if ("direct-predecessor" a b) (topObjectProperty a b))
+(if ("direct-successor" a b) (topObjectProperty a b))
+(if ("expanded-by" a b) (topObjectProperty a b))
+(if ("expands" a b) (topObjectProperty a b))
+(if ("expected-by" a b) (topObjectProperty a b))
+(if ("expects" a b) (topObjectProperty a b))
+(if ("exploited-by" a b) (topObjectProperty a b))
+(if ("exploits" a b) (topObjectProperty a b))
+(if ("expressed-by" a b) (topObjectProperty a b))
+(if ("expresses" a b) (topObjectProperty a b))
+(if ("has-method" a b) (topObjectProperty a b))
+(if ("instantiated-by" a b) (topObjectProperty a b))
+(if ("instantiates" a b) (topObjectProperty a b))
+(if ("intensionally-referenced-by" a b) (topObjectProperty a b))
+(if ("intensionally-references" a b) (topObjectProperty a b))
+(if ("involved-in" a b) (topObjectProperty a b))
+(if ("involves" a b) (topObjectProperty a b))
+(if ("member" a b) (topObjectProperty a b))
+(if ("member-of" a b) (topObjectProperty a b))
+(if ("method-of" a b) (topObjectProperty a b))
+(if ("ordered-by" a b) (topObjectProperty a b))
+(if ("orders" a b) (topObjectProperty a b))
+(if ("parametrized-by" a b) (topObjectProperty a b))
+(if ("parametrizes" a b) (topObjectProperty a b))
+(if ("predecessor" a b) (topObjectProperty a b))
+(if ("referenced-by" a b) (topObjectProperty a b))
+(if ("references" a b) (topObjectProperty a b))
+(if ("refined-by" a b) (topObjectProperty a b))
+(if ("refines" a b) (topObjectProperty a b))
+(if ("sequenced-by" a b) (topObjectProperty a b))
+(if ("sequences" a b) (topObjectProperty a b))
+(if ("specialized-by" a b) (topObjectProperty a b))
+(if ("specializes" a b) (topObjectProperty a b))
+(if ("successor" a b) (topObjectProperty a b))
+(if ("used-by" a b) (topObjectProperty a b))
+(if ("uses" a b) (topObjectProperty a b))
+(if ("value-for" a b) (topObjectProperty a b))
+(if ("valued-by" a b) (topObjectProperty a b))
+(if ("topObjectProperty" a b) (topObjectProperty a b))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#achieves" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#addresses" a
+                                                                   b) (not (bottomObjectProperty a
+                                                                                                 b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#assumes" a
+                                                                 b) (not (bottomObjectProperty a
+                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#executes" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#handlesFeatureType" a
+                                                                            b) (not (bottomObjectProperty a
+                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasCombinationFunction" a
+                                                                                b) (not (bottomObjectProperty a
+                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComplexityComponent" a
+                                                                                b) (not (bottomObjectProperty a
+                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComponent" a
+                                                                      b) (not (bottomObjectProperty a
+                                                                                                    b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComponentStep" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasComputationalComplexityFunction" a
+                                                                                            b) (not (bottomObjectProperty a
+                                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasConstraint" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDataType" a
+                                                                     b) (not (bottomObjectProperty a
+                                                                                                   b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionBoundary" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionCriterion" a
+                                                                              b) (not (bottomObjectProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionRule" a
+                                                                         b) (not (bottomObjectProperty a
+                                                                                                       b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionStrategy" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDecisionTarget" a
+                                                                           b) (not (bottomObjectProperty a
+                                                                                                         b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDensityEstimation" a
+                                                                              b) (not (bottomObjectProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistanceFunction" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistanceOrSimilarityFunction" a
+                                                                                         b) (not (bottomObjectProperty a
+                                                                                                                       b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistinctValue" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDistributionParameter" a
+                                                                                  b) (not (bottomObjectProperty a
+                                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasDualForm" a
+                                                                     b) (not (bottomObjectProperty a
+                                                                                                   b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasEvaluationFunction" a
+                                                                               b) (not (bottomObjectProperty a
+                                                                                                             b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeature" a
+                                                                    b) (not (bottomObjectProperty a
+                                                                                                  b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeatureEvaluator" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFeatureTestEvaluator" a
+                                                                                 b) (not (bottomObjectProperty a
+                                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasFirstSubprocess" a
+                                                                            b) (not (bottomObjectProperty a
+                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasHypothesisComplexityControlStrategy" a
+                                                                                                b) (not (bottomObjectProperty a
+                                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasHypothesisStructure" a
+                                                                                b) (not (bottomObjectProperty a
+                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasInput" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasInstance" a
+                                                                     b) (not (bottomObjectProperty a
+                                                                                                   b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasKernelFunction" a
+                                                                           b) (not (bottomObjectProperty a
+                                                                                                         b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasLeafPredictor" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMainTable" a
+                                                                      b) (not (bottomObjectProperty a
+                                                                                                    b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasMember" a
+                                                                   b) (not (bottomObjectProperty a
+                                                                                                 b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasModalValue" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasModelComplexityMeasure" a
+                                                                                   b) (not (bottomObjectProperty a
+                                                                                                                 b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasObjectiveFunction" a
+                                                                              b) (not (bottomObjectProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimalityLevel" a
+                                                                            b) (not (bottomObjectProperty a
+                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationGoal" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationProblem" a
+                                                                                b) (not (bottomObjectProperty a
+                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOptimizationStrategy" a
+                                                                                 b) (not (bottomObjectProperty a
+                                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasOutput" a
+                                                                   b) (not (bottomObjectProperty a
+                                                                                                 b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameter" a
+                                                                      b) (not (bottomObjectProperty a
+                                                                                                    b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterRole" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasParameterSetting" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPart" a
+                                                                 b) (not (bottomObjectProperty a
+                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPerformanceComponent" a
+                                                                                 b) (not (bottomObjectProperty a
+                                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPostprocessor" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasPreprocessor" a
+                                                                         b) (not (bottomObjectProperty a
+                                                                                                       b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasRecoveryOfPursuit" a
+                                                                              b) (not (bottomObjectProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasRelationalOperator" a
+                                                                               b) (not (bottomObjectProperty a
+                                                                                                             b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasScopeOfSelection" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSearchDirection" a
+                                                                            b) (not (bottomObjectProperty a
+                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSearchGuidance" a
+                                                                           b) (not (bottomObjectProperty a
+                                                                                                         b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSelfTunedHyperParameter" a
+                                                                                    b) (not (bottomObjectProperty a
+                                                                                                                  b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSimilarityFunction" a
+                                                                               b) (not (bottomObjectProperty a
+                                                                                                             b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSink" a
+                                                                 b) (not (bottomObjectProperty a
+                                                                                               b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSource" a
+                                                                   b) (not (bottomObjectProperty a
+                                                                                                 b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasStopCriterion" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasSubprocess" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTable" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTableFormat" a
+                                                                        b) (not (bottomObjectProperty a
+                                                                                                      b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTargetFeature" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasTargetLearner" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasUncertaintyLevel" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasValueDomain" a
+                                                                        b) (not (bottomObjectProperty a
+                                                                                                      b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasVariable" a
+                                                                     b) (not (bottomObjectProperty a
+                                                                                                   b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#implements" a
+                                                                    b) (not (bottomObjectProperty a
+                                                                                                  b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#interactsWithLearnerAs" a
+                                                                                b) (not (bottomObjectProperty a
+                                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isComponentOf" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isImplementedBy" a
+                                                                         b) (not (bottomObjectProperty a
+                                                                                                       b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isParameterOf" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isPartOf" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSpecifiedInputOf" a
+                                                                            b) (not (bottomObjectProperty a
+                                                                                                          b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSpecifiedOutputOf" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSubprocessOf" a
+                                                                        b) (not (bottomObjectProperty a
+                                                                                                      b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isSubsampleOf" a
+                                                                       b) (not (bottomObjectProperty a
+                                                                                                     b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#isTargetFeatureOf" a
+                                                                           b) (not (bottomObjectProperty a
+                                                                                                         b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#realizes" a
+                                                                  b) (not (bottomObjectProperty a
+                                                                                                b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#requiresDataType" a
+                                                                          b) (not (bottomObjectProperty a
+                                                                                                        b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#setsValueOf" a
+                                                                     b) (not (bottomObjectProperty a
+                                                                                                   b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#solves" a
+                                                                b) (not (bottomObjectProperty a
+                                                                                              b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#specifiesInputClass" a
+                                                                             b) (not (bottomObjectProperty a
+                                                                                                           b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#specifiesOutputClass" a
+                                                                              b) (not (bottomObjectProperty a
+                                                                                                            b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#step1" a
+                                                               b) (not (bottomObjectProperty a
+                                                                                             b)))
+(if ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#step2" a
+                                                               b) (not (bottomObjectProperty a
+                                                                                             b)))
+(if ("abstract-location" a b) (not (bottomObjectProperty a b)))
+(if ("abstract-location-of" a b) (not (bottomObjectProperty a b)))
+(if ("atomic-part" a b) (not (bottomObjectProperty a b)))
+(if ("atomic-part-of" a b) (not (bottomObjectProperty a b)))
+(if ("boundary" a b) (not (bottomObjectProperty a b)))
+(if ("boundary-of" a b) (not (bottomObjectProperty a b)))
+(if ("exact-location" a b) (not (bottomObjectProperty a b)))
+(if ("exact-location-of" a b) (not (bottomObjectProperty a b)))
+(if ("generic-constituent" a b) (not (bottomObjectProperty a b)))
+(if ("generic-constituent-of" a b) (not (bottomObjectProperty a
+                                                              b)))
+(if ("generic-dependent" a b) (not (bottomObjectProperty a b)))
+(if ("generic-location" a b) (not (bottomObjectProperty a b)))
+(if ("generic-location-of" a b) (not (bottomObjectProperty a b)))
+(if ("generically-dependent-on" a b) (not (bottomObjectProperty a
+                                                                b)))
+(if ("has-quale" a b) (not (bottomObjectProperty a b)))
+(if ("has-quality" a b) (not (bottomObjectProperty a b)))
+(if ("immediate-relation" a b) (not (bottomObjectProperty a b)))
+(if ("immediate-relation-i" a b) (not (bottomObjectProperty a b)))
+(if ("inherent-in" a b) (not (bottomObjectProperty a b)))
+(if ("mediated-relation" a b) (not (bottomObjectProperty a b)))
+(if ("mediated-relation-i" a b) (not (bottomObjectProperty a b)))
+(if ("overlaps" a b) (not (bottomObjectProperty a b)))
+(if ("part" a b) (not (bottomObjectProperty a b)))
+(if ("part-of" a b) (not (bottomObjectProperty a b)))
+(if ("proper-part" a b) (not (bottomObjectProperty a b)))
+(if ("proper-part-of" a b) (not (bottomObjectProperty a b)))
+(if ("q-location" a b) (not (bottomObjectProperty a b)))
+(if ("q-location-of" a b) (not (bottomObjectProperty a b)))
+(if ("quale-of" a b) (not (bottomObjectProperty a b)))
+(if ("admits" a b) (not (bottomObjectProperty a b)))
+(if ("admitted-by" a b) (not (bottomObjectProperty a b)))
+(if ("co-participates-with" a b) (not (bottomObjectProperty a b)))
+(if ("component" a b) (not (bottomObjectProperty a b)))
+(if ("component-of" a b) (not (bottomObjectProperty a b)))
+(if ("covered-by" a b) (not (bottomObjectProperty a b)))
+(if ("covers" a b) (not (bottomObjectProperty a b)))
+(if ("d-used-by" a b) (not (bottomObjectProperty a b)))
+(if ("d-uses" a b) (not (bottomObjectProperty a b)))
+(if ("defined-by" a b) (not (bottomObjectProperty a b)))
+(if ("defines" a b) (not (bottomObjectProperty a b)))
+(if ("direct-predecessor" a b) (not (bottomObjectProperty a b)))
+(if ("direct-successor" a b) (not (bottomObjectProperty a b)))
+(if ("expanded-by" a b) (not (bottomObjectProperty a b)))
+(if ("expands" a b) (not (bottomObjectProperty a b)))
+(if ("expected-by" a b) (not (bottomObjectProperty a b)))
+(if ("expects" a b) (not (bottomObjectProperty a b)))
+(if ("exploited-by" a b) (not (bottomObjectProperty a b)))
+(if ("exploits" a b) (not (bottomObjectProperty a b)))
+(if ("expressed-by" a b) (not (bottomObjectProperty a b)))
+(if ("expresses" a b) (not (bottomObjectProperty a b)))
+(if ("has-method" a b) (not (bottomObjectProperty a b)))
+(if ("instantiated-by" a b) (not (bottomObjectProperty a b)))
+(if ("instantiates" a b) (not (bottomObjectProperty a b)))
+(if ("intensionally-referenced-by" a
+                                   b) (not (bottomObjectProperty a b)))
+(if ("intensionally-references" a b) (not (bottomObjectProperty a
+                                                                b)))
+(if ("involved-in" a b) (not (bottomObjectProperty a b)))
+(if ("involves" a b) (not (bottomObjectProperty a b)))
+(if ("member" a b) (not (bottomObjectProperty a b)))
+(if ("member-of" a b) (not (bottomObjectProperty a b)))
+(if ("method-of" a b) (not (bottomObjectProperty a b)))
+(if ("ordered-by" a b) (not (bottomObjectProperty a b)))
+(if ("orders" a b) (not (bottomObjectProperty a b)))
+(if ("parametrized-by" a b) (not (bottomObjectProperty a b)))
+(if ("parametrizes" a b) (not (bottomObjectProperty a b)))
+(if ("predecessor" a b) (not (bottomObjectProperty a b)))
+(if ("referenced-by" a b) (not (bottomObjectProperty a b)))
+(if ("references" a b) (not (bottomObjectProperty a b)))
+(if ("refined-by" a b) (not (bottomObjectProperty a b)))
+(if ("refines" a b) (not (bottomObjectProperty a b)))
+(if ("sequenced-by" a b) (not (bottomObjectProperty a b)))
+(if ("sequences" a b) (not (bottomObjectProperty a b)))
+(if ("specialized-by" a b) (not (bottomObjectProperty a b)))
+(if ("specializes" a b) (not (bottomObjectProperty a b)))
+(if ("successor" a b) (not (bottomObjectProperty a b)))
+(if ("used-by" a b) (not (bottomObjectProperty a b)))
+(if ("uses" a b) (not (bottomObjectProperty a b)))
+(if ("value-for" a b) (not (bottomObjectProperty a b)))
+(if ("valued-by" a b) (not (bottomObjectProperty a b)))
+(if ("topObjectProperty" a b) (not (bottomObjectProperty a b)))
+(forall (a) (iff ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationDiscoveryAlgorithm" a) (and ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#PatternDiscoveryAlgorithm" a)
+                                                                                                            (exists (b) (and ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#addresses" a
+                                                                                                                                                                                            b)
+                                                                                                                             ("http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#AssociationDiscoveryTask" b))))))

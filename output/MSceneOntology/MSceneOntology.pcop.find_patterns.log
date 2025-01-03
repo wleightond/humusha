@@ -1,0 +1,11 @@
+
+Received 5 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='pcop_f1', objs=[PatternObject(formula_name='pcop_f1', object_name='A', object_value='arbitrary-sum'), PatternObject(formula_name='pcop_f1', object_name='B', object_value='endurant')], sentence='(forall (a) (if (arbitrary-sum a) (endurant a)))\n')
+	AxiomInstance(formula_name='pcop_f2', objs=[PatternObject(formula_name='pcop_f2', object_name='A', object_value='event'), PatternObject(formula_name='pcop_f2', object_name='B', object_value='perdurant')], sentence='(forall (a) (if (event a) (perdurant a)))\n')
+	AxiomInstance(formula_name='pcop_f1', objs=[PatternObject(formula_name='pcop_f1', object_name='A', object_value='non-physical-endurant'), PatternObject(formula_name='pcop_f1', object_name='B', object_value='endurant')], sentence='(forall (a) (if (non-physical-endurant a) (endurant a)))\n')
+	AxiomInstance(formula_name='pcop_f1', objs=[PatternObject(formula_name='pcop_f1', object_name='A', object_value='physical-endurant'), PatternObject(formula_name='pcop_f1', object_name='B', object_value='endurant')], sentence='(forall (a) (if (physical-endurant a) (endurant a)))\n')
+	AxiomInstance(formula_name='pcop_f2', objs=[PatternObject(formula_name='pcop_f2', object_name='A', object_value='stative'), PatternObject(formula_name='pcop_f2', object_name='B', object_value='perdurant')], sentence='(forall (a) (if (stative a) (perdurant a)))')
+
+Found 0 pattern instance(s) for pattern 'pcop'.
+Instances:

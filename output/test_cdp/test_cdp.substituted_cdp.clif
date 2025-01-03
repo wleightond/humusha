@@ -1,0 +1,4 @@
+(forall (x) (if (Bookloan x) (exists (y) (and (Duration y) (hasDataValue x y)))))
+(forall (x) (if (Duration x) (exists (y) (and (Time y) (hasDataValue x y)))))
+(forall (x) (if (Employee x) (exists (y) (and (Person y) (hasDataValue x y)))))
+(forall (x) (if (Person x) (exists (y) (and (Running y) (hasDataValue x y)))))

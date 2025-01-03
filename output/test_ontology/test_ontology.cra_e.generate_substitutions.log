@@ -1,0 +1,8 @@
+
+Received 1 pattern(s).
+Patterns:
+	PatternInstance(pattern='cra_e', objs=[PatternObject(formula_name='cra_e_f1', object_name='A', object_value='D'), PatternObject(formula_name='cra_e_f1', object_name='B', object_value='S'), PatternObject(formula_name='cra_e_f1', object_name='C', object_value='hasDataValue')], axioms=[AxiomInstance(formula_name='cra_e_f1', objs=[PatternObject(formula_name='cra_e_f1', object_name='A', object_value='D'), PatternObject(formula_name='cra_e_f1', object_name='B', object_value='S'), PatternObject(formula_name='cra_e_f1', object_name='C', object_value='hasDataValue')], sentence='(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))')])
+
+Generated 1 substitution(s) for pattern 'cra_e'.
+Substitutions:
+	Substitution(axioms_to_delete=['(forall (x) (if (D x) (exists (y) (and (S x y)\n                                       (exists (z) (hasDataValue y z))))))'], axioms_to_add=['(forall (x) (if (D x) (exists (y) (hasDataValue x y))))'])

@@ -1,12 +1,22 @@
 INSTANCE
-Just ("RR_f2",["concept","non-agentive-social-object"])
+Just ("rr_f3",["action","cognitive-state","generically-dependent-on"])
+(forall (a) (if (action a) (exists (b) (and (generically-dependent-on a
+                                                                      b)
+                                            (cognitive-state b)))))
+INSTANCE
+Just ("rr_f2",["concept","non-agentive-social-object"])
 (forall (a) (if (concept a) (non-agentive-social-object a)))
 INSTANCE
-Just ("RR_f2",["description","non-agentive-social-object"])
+Just ("rr_f2",["description","non-agentive-social-object"])
 (forall (a) (if (description a) (non-agentive-social-object a)))
 INSTANCE
-Just ("RR_f2",["information-object","non-agentive-social-object"])
+Just ("rr_f2",["information-object","non-agentive-social-object"])
 (forall (a) (if (information-object a) (non-agentive-social-object a)))
 INSTANCE
-Just ("RR_f2",["non-agentive-social-object","social-object"])
+Just ("rr_f2",["non-agentive-social-object","social-object"])
 (forall (a) (if (non-agentive-social-object a) (social-object a)))
+INSTANCE
+Just ("rr_f3",["social-object","communication-event","generically-dependent-on"])
+(forall (a) (if (social-object a) (exists (b) (and (generically-dependent-on a
+                                                                             b)
+                                                   (communication-event b)))))

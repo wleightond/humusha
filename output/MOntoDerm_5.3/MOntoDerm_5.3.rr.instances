@@ -1,6 +1,11 @@
 INSTANCE
-Just ("RR_f1",["Living","physical-object"])
+Just ("rr_f1",["Living","physical-object"])
 (forall (a) (if (Living a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["NonLiving","physical-object"])
+Just ("rr_f1",["NonLiving","physical-object"])
 (forall (a) (if (NonLiving a) (physical-object a)))
+INSTANCE
+Just ("rr_f3",["non-physical-object","physical-endurant","generically-dependent-on"])
+(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a
+                                                                                   b)
+                                                         (physical-endurant b)))))

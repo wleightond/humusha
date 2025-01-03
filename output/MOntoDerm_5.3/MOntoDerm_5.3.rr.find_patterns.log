@@ -1,0 +1,9 @@
+
+Received 3 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='Living'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (Living a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='NonLiving'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (NonLiving a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f3', objs=[PatternObject(formula_name='rr_f3', object_name='A', object_value='non-physical-object'), PatternObject(formula_name='rr_f3', object_name='B', object_value='physical-endurant'), PatternObject(formula_name='rr_f3', object_name='R', object_value='generically-dependent-on')], sentence='(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a\n                                                                                   b)\n                                                         (physical-endurant b)))))')
+
+Found 0 pattern instance(s) for pattern 'rr'.
+Instances:

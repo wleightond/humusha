@@ -1,0 +1,7 @@
+
+Received 1 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='SpatialObject'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (SpatialObject a) (physical-object a)))')
+
+Found 0 pattern instance(s) for pattern 'rr'.
+Instances:

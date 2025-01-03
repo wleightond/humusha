@@ -1,0 +1,18 @@
+COMMAND: DELETE
+(forall (a) (if (DM-Operator a) (exists (b) (and (boolean b)
+                                                 (isMultiAlgorithmOperator a
+                                                                           b)))))
+
+COMMAND: ADD
+(forall (x) (if (DM-Operator x) (exists (y) (and (boolean y) (hasDataValue x y)))))
+COMMAND: DELETE
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isAdmissible a b)))))
+
+COMMAND: ADD
+(forall (x) (if (SearchStrategy x) (exists (y) (and (boolean y) (hasDataValue x y)))))
+COMMAND: DELETE
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isComplete a b)))))
+COMMAND: ADD
+(forall (x) (if (SearchStrategy x) (exists (y) (and (boolean y) (hasDataValue x y)))))

@@ -1,0 +1,12 @@
+
+Received 6 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='rr_f3', objs=[PatternObject(formula_name='rr_f3', object_name='A', object_value='action'), PatternObject(formula_name='rr_f3', object_name='B', object_value='cognitive-state'), PatternObject(formula_name='rr_f3', object_name='R', object_value='generically-dependent-on')], sentence='(forall (a) (if (action a) (exists (b) (and (generically-dependent-on a\n                                                                      b)\n                                            (cognitive-state b)))))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='concept'), PatternObject(formula_name='rr_f2', object_name='B', object_value='non-agentive-social-object')], sentence='(forall (a) (if (concept a) (non-agentive-social-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='description'), PatternObject(formula_name='rr_f2', object_name='B', object_value='non-agentive-social-object')], sentence='(forall (a) (if (description a) (non-agentive-social-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='information-object'), PatternObject(formula_name='rr_f2', object_name='B', object_value='non-agentive-social-object')], sentence='(forall (a) (if (information-object a) (non-agentive-social-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='non-agentive-social-object'), PatternObject(formula_name='rr_f2', object_name='B', object_value='social-object')], sentence='(forall (a) (if (non-agentive-social-object a) (social-object a)))\n')
+	AxiomInstance(formula_name='rr_f3', objs=[PatternObject(formula_name='rr_f3', object_name='A', object_value='social-object'), PatternObject(formula_name='rr_f3', object_name='B', object_value='communication-event'), PatternObject(formula_name='rr_f3', object_name='R', object_value='generically-dependent-on')], sentence='(forall (a) (if (social-object a) (exists (b) (and (generically-dependent-on a\n                                                                             b)\n                                                   (communication-event b)))))')
+
+Found 0 pattern instance(s) for pattern 'rr'.
+Instances:

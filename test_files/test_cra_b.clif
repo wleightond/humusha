@@ -1,0 +1,1 @@
+(forall (x y) (if (and (A x) (B x y)) (exists (z) (C y z))))

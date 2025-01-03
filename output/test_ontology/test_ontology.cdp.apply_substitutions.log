@@ -1,0 +1,25 @@
+
+Received 3 axioms to delete.
+
+Deleting axiom:
+(forall (x) (if (Bookloan x) (exists (y) (and (Duration y)
+                                              (has-quality x y)))))
+
+Deleting axiom:
+(forall (x) (if (Duration x) (exists (y) (and (Time y)
+                                              (has-quale x y)))))
+
+Deleting axiom:
+(forall (x) (if (Person x) (exists (y) (and (Running y)
+                                            (participant-in x y)))))
+
+Received 3 axioms to add.
+
+Adding axiom:
+(forall (x) (if (Bookloan x) (exists (y) (and (Duration y) (hasDataValue x y)))))
+
+Adding axiom:
+(forall (x) (if (Duration x) (exists (y) (and (Time y) (hasDataValue x y)))))
+
+Adding axiom:
+(forall (x) (if (Person x) (exists (y) (and (Running y) (hasDataValue x y)))))

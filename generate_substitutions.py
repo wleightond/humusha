@@ -100,11 +100,11 @@ def generate_substitution(
 
 
 CUSTOM_SUBSTITUTION_FUNCTIONS = {
-    COP: sub_cops,
-    COP_B: sub_copbs,
-    PCOP: sub_pcops,
-    CDP: sub_cdps,
-    QDP: sub_qdps,
+    # COP: sub_cops,
+    # COP_B: sub_copbs,
+    # PCOP: sub_pcops,
+    # CDP: sub_cdps,
+    # QDP: sub_qdps,
     # RR: sub_rrs,
-    CRA: sub_cras,
+    # CRA: sub_cras,
 }
