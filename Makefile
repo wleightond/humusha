@@ -7,14 +7,14 @@
 # 	cat test_ontology.clif | ./bin/find_rr_instances > ./instances/rr_instances;
 
 # allsubs:
-# 	cat ./instances/cdp_instances 	| ./make_subs.py > ./substitutions/cdp_substitutions
-# 	cat ./instances/cop_instances 	| ./make_subs.py > ./substitutions/cop_substitutions
-# 	cat ./instances/pcop_instances 	| ./make_subs.py > ./substitutions/pcop_substitutions
-# 	cat ./instances/qdp_instances 	| ./make_subs.py > ./substitutions/qdp_substitutions
-# 	cat ./instances/rr_instances 	| ./make_subs.py > ./substitutions/rr_substitutions
+# 	cat ./instances/cdp_instances 	| ./find_patterns.py > ./substitutions/cdp_substitutions
+# 	cat ./instances/cop_instances 	| ./find_patterns.py > ./substitutions/cop_substitutions
+# 	cat ./instances/pcop_instances 	| ./find_patterns.py > ./substitutions/pcop_substitutions
+# 	cat ./instances/qdp_instances 	| ./find_patterns.py > ./substitutions/qdp_substitutions
+# 	cat ./instances/rr_instances 	| ./find_patterns.py > ./substitutions/rr_substitutions
 
 # testrr:
-# 	cat test_ontology.clif | ./bin/find_rr_instances | ./make_subs.py
+# 	cat test_ontology.clif | ./bin/find_rr_instances | ./find_patterns.py
 
 utils:
 	cd build/utils;	cabal build; cd ../../
@@ -25,11 +25,11 @@ finders:
 	./humusha build-instance-finders
 
 test-patts:
-	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./odpsub $$i ./test_files/test_$$i.clif; done
+	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/test_$$i.clif; done
 
 test-reals:
-	for file in {DMOP,MDMOP,MNaive_animal_ontology2,MOntoDerm_5.3,MSEGOv3,MSceneOntology,PhysicalEntity,SceneOntology,SpacialAction}; do for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./odpsub $$i ./test_files/$$file.clif; done; done
-	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./odpsub $$i ./test_files/test_ontology.clif; done
+	for file in {DMOP,MDMOP,MNaive_animal_ontology2,MOntoDerm_5.3,MSEGOv3,MSceneOntology,PhysicalEntity,SceneOntology,SpacialAction}; do for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/$$file.clif; done; done
+	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/test_ontology.clif; done
 
 test: test-patts test-reals
 

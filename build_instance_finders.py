@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-import json
+from io import TextIOWrapper
+import subprocess
 from typing import Sequence, Union
 from subprocess import Popen, PIPE, STDOUT
 from collections.abc import Iterator
 from re import findall
-from os import system, chdir, remove, listdir
+from os import chdir, remove, listdir
 
-# import dolcetaxonomy as tax
 HEADER = """module Main where
 
 import CommonLogic.AS_CommonLogic as AS
@@ -187,7 +187,9 @@ def get_vars(sentence: str) -> list[str]:
 class Pattern:  # pylint: disable=too-few-public-methods
     def __init__(self, name="", sentence="", objs=[], constraints=[]):
         self.name = name
-        self.sentence = get_parsed([sentence]).decode("UTF8").strip().split("\n", maxsplit=1)[0]
+        self.sentence = (
+            get_parsed([sentence]).decode("UTF8").strip().split("\n", maxsplit=1)[0]
+        )
         self.objs = objs
         self.vars = get_vars(sentence)
         self.constraints = constraints
@@ -250,44 +252,60 @@ def combine_funcs(patterns: list[Pattern]):
     return comp_funcs
 
 
-if __name__ == "__main__":
-    with open("config.json") as f:
-        state = json.load(f)
-
+def build(config: dict, log: TextIOWrapper):
     PATTERNS = {
         pattern.lower(): list(
             map(
-                lambda f: Pattern(name=f, **state["formulae"][f]),
-                state["patterns"][pattern]["formulae"],
+                lambda f: Pattern(name=f, **config["formulae"][f]),
+                config["patterns"][pattern]["formulae"],
             )
         )
-        for pattern in state["patterns"]
+        for pattern in config["patterns"]
     }
 
+    log.write("Generating instance finders...\n")
     headers_added = []
     pattdir = "build/finders/"
     chdir(pattdir)
     cabalname = "finders.cabal"
     remove(cabalname)
     with open(cabalname, "w") as c:
+        log.write(f"\nWriting cabal header to: {cabalname}")
         c.write(cabal_header)
     for pattern_name in PATTERNS:
+        log.write(f"\n\nGenerating functions for pattern '{pattern_name}'.")
         outstr = "\n".join(combine_funcs(PATTERNS[pattern_name]))
         d = HEADER + outstr + FOOTER
         filename = f"app/{pattern_name}.hs"
         with open(filename, "w") as f:
+            log.write(
+                f"\nFinders for pattern '{pattern_name}' written to: {pattdir}{filename}"
+            )
             f.write(d)
         if not pattern_name in headers_added:
             with open(cabalname, "a") as c:
+                log.write(f"\nAmending cabal file for pattern '{pattern_name}'.")
                 c.write(cabal_executable(pattern_name))
         headers_added.append(pattern_name)
-    # system("pwd")
-    system("cabal build 1>/dev/null 2>/dev/null")
+
+    log.write("\n\n\nBuilding with cabal...\n\n")
+    log.flush()
+    subprocess.run(["cabal", "build"], stdout=log, stderr=log)
     chdir("../..")
-    # system("pwd")
-    print(f'Configured patterns: {list(sorted(PATTERNS.keys()))}')
+
+    log.write("\n\nCopying binaries...\n\n")
+    log.flush()
     for pattern_name in PATTERNS:
         sys_folder = listdir("build/finders/dist-newstyle/build")[0]
         ghc_folder = listdir(f"build/finders/dist-newstyle/build/{sys_folder}")[0]
-        cpbin = f"cp build/finders/dist-newstyle/build/{sys_folder}/{ghc_folder}/clsents-0.1.0.0/x/clsents{pattern_name}/build/clsents{pattern_name}/clsents{pattern_name} bin/find_{pattern_name}_instances"
-        system(cpbin)
+        subprocess.run(
+            [
+                "cp",
+                "-v",
+                f"build/finders/dist-newstyle/build/{sys_folder}/{ghc_folder}/clsents-0.1.0.0/x/clsents{pattern_name}/build/clsents{pattern_name}/clsents{pattern_name}",
+                f"bin/find_{pattern_name}_instances",
+            ],
+            stdout=log,
+            stderr=log,
+        )
+    return list(sorted(PATTERNS.keys()))
