@@ -35,6 +35,7 @@ class PatternInstance:
     objs: list[PatternObject]
     axioms: tuple[AxiomInstance, ...]
 
+
 # Substitutions are made of a list of axioms to remove and a list of axioms to add
 @dataclass
 class Substitution:

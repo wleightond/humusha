@@ -151,15 +151,21 @@ def get_parsed(sentences: Sequence[str]) -> str:
     return parsed[0]
 
 
+CONSTRAINT_OPS = {"EQUALS": "=="}
+
+
 def make_constraints(
     constraints: Sequence[tuple[str, Union[str, Sequence[str]]]] = []
 ) -> str:
     conds = []
-    for obj, names in constraints:
+    for op, obj, names in constraints:
         if isinstance(names, str):
             names = [names]
         cond_str = " || ".join(
-            [f'({lower_first(obj)}_0 == Id.mkSimpleId "{name}")' for name in names]
+            [
+                f'({lower_first(obj)}_0 {CONSTRAINT_OPS[op]} Id.mkSimpleId "{name}")'
+                for name in names
+            ]
         )
         if len(names) > 1:
             cond_str = f"({cond_str})"

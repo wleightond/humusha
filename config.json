@@ -8,62 +8,57 @@
         "cop_f1": {
             "sentence": "(forall (x) (if (A x) (and (exists (y) (and (B y) (C y x))) (exists (z) (and (D z) (C z x))))))",
             "objs": ["A", "B", "C", "D"],
-            "constraints": [["C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
+            "constraints": [["EQUALS", "C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
         }, 
         "cop_b_f1": {
             "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (C y x) (exists (z) (and (D z) (C z x)))))))",
             "objs": ["A", "B", "C", "D"],
-            "constraints": [["C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
+            "constraints": [["EQUALS", "C", ["total-constant-participant-in", "constant-participant-in", "total-temporary-participant-in", "temporary-participant-in", "participant-in"]]]
         }, 
         "cra_a_f1": {
             "sentence": "(forall (x) (forall (y) (if (and (A x) (B x y)) (exists (z) (C y z)))))",
             "objs": ["A", "B", "C"],
-            "constraints": [["C", "hasDataValue"]]
-        },
-        "cra_b_f1": {
-            "sentence": "(forall (x y) (if (and (A x) (B x y)) (exists (z) (C y z))))",
-            "objs": ["A", "B", "C"],
-            "constraints": [["C", "hasDataValue"]]
+            "constraints": [["EQUALS", "C", "hasDataValue"]]
         },
         "cra_e_f1": {
             "sentence": "(forall (x) (if (A x) (exists (y) (and (B x y) (exists (z) (C y z))))))",
             "objs": ["A", "B", "C"],
-            "constraints": [["C", "hasDataValue"]]
+            "constraints": [["EQUALS", "C", "hasDataValue"]]
         },
         "pcop_f1": {
             "sentence": "(forall (x) (if (A x) (B x)))",
             "objs": ["A", "B"],
-            "constraints": [["B", "endurant"]]
+            "constraints": [["EQUALS", "B", "endurant"]]
         }, 
         "pcop_f2": {
             "sentence": "(forall (x) (if (A x) (B x)))",
             "objs": ["A", "B"],
-            "constraints": [["B", "perdurant"]]
+            "constraints": [["EQUALS", "B", "perdurant"]]
         }, 
         "qdp_f1": {
             "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (C x y) (exists (z) (and (D z) (E y z) (exists (v) (F z v))))))))",
             "objs": ["A", "B", "C", "D", "E", "F"],
-            "constraints": [["C", "has-quality"], ["E", "has-quale"]]
+            "constraints": [["EQUALS", "C", "has-quality"], ["EQUALS", "E", "has-quale"]]
         },
         "rr_f1": {
             "sentence": "(forall (x) (if (A x) (B x)))",
             "objs": ["A", "B"],
-            "constraints": [["B", ["physical-object", "agentive-physical-object", "non-agentive-physical-object", "POB"]]]
+            "constraints": [["EQUALS", "B", ["physical-object", "agentive-physical-object", "non-agentive-physical-object", "POB"]]]
         }, 
         "rr_f2": {
             "sentence": "(forall (x) (if (A x) (B x)))",
             "objs": ["A", "B"],
-            "constraints": [["B", ["social-object", "agentive-social-object", "social-agent", "non-agentive-social-object", "SOB"]]]
+            "constraints": [["EQUALS", "B", ["social-object", "agentive-social-object", "social-agent", "non-agentive-social-object", "SOB"]]]
         }, 
         "rr_f3": {
             "sentence": "(forall (x) (if (A x) (exists (y) (and (R x y) (B y)))))",
             "objs": ["A", "B", "R"],
-            "constraints": [["R", ["OD", "generically-dependent-on", "OGD"]]]
+            "constraints": [["EQUALS", "R", ["OD", "generically-dependent-on", "OGD"]]]
         },
         "gc_a_f1": {
             "sentence": "(forall (x) (if (R x) (exists (y) (and (B y) (participates-in x y)))))",
             "objs": ["A", "B", "C"],
-            "constraints": [["B", "{C}-Occurence"]]
+            "constraints": [["EQUALS", "B", "{C}-Occurence"]]
         },
         "gc_a_f2": {
             "sentence": "(forall (x) (if (R x) (exists (y) (and (C y) (inheres-in y x)))))",
@@ -73,7 +68,7 @@
         "gc_a_f3": {
             "sentence": "(forall (x) (if (B x) (exists (y) (and (C y) (has-focus x y)))))",
             "objs": ["B", "C"],
-            "constraints": [["B", "{C}-Occurence"]]
+            "constraints": [["EQUALS", "B", "{C}-Occurence"]]
         }
     },
     "patterns": {
@@ -94,8 +89,8 @@
         "pcop": {
             "formulae": ["cop_f1", "pcop_f1", "pcop_f2"],
             "constraints": [
-                [["cop_f1", "B"], ["pcop_f1", "A"]],
-                [["cop_f1", "A"], ["pcop_f2", "A"]]
+                ["EQUALS", ["cop_f1", "B"], ["pcop_f1", "A"]],
+                ["EQUALS", ["cop_f1", "A"], ["pcop_f2", "A"]]
             ],
             "substitution": [
                 "(forall (x) (forall (y) (if (has{cop_f1_A} x y) (and ({cop_f1_B} x) ({cop_f1_D} y)))))"
@@ -111,8 +106,8 @@
         "rr": {
             "formulae": ["rr_f1", "rr_f2", "rr_f3"],
             "constraints": [
-                [["rr_f1", "A"], ["rr_f3", "B"]],
-                [["rr_f2", "A"], ["rr_f3", "A"]]
+                ["EQUALS", ["rr_f1", "A"], ["rr_f3", "B"]],
+                ["EQUALS", ["rr_f2", "A"], ["rr_f3", "A"]]
             ],
             "substitution": [
                 "(forall (x) (if ({rr_f3_A} x) ({rr_f3_B} x)))"
@@ -130,13 +125,6 @@
             "constraints": [],
             "substitution": [
                 "(forall (x) (if ({cra_a_f1_A} x) (exists (y) (hasDataValue x y))))"
-            ]
-        },
-        "cra_b": {
-            "formulae": ["cra_b_f1"],
-            "constraints": [],
-            "substitution": [
-                "(forall (x) (if ({cra_b_f1_A} x) (exists (y) (hasDataValue x y))))"
             ]
         },
         "cra_e": {

@@ -373,56 +373,6 @@ executable clsentscra_a
     hs-source-dirs:   app
     default-language: Haskell2010
 
-executable clsentscra_b
-    main-is:          cra_b.hs
-
-    -- Modules included in this executable, other than Main.
-    other-modules:
-        Codec.Binary.UTF8.Generic
-        Codec.Binary.UTF8.String
-        Common.AS_Annotation
-        Common.AnnoParser
-        Common.AnnoState
-        Common.ConvertLiteral
-        Common.Doc
-        Common.DocUtils
-        Common.GlobalAnnotations
-        Common.IRI
-        Common.Id
-        Common.Keywords
-        Common.LaTeX_funs
-        Common.LaTeX_maps
-        Common.Lexer
-        Common.Lib.MapSet
-        Common.Lib.Pretty
-        Common.Lib.Rel
-        Common.Parsec
-        Common.Percent
-        Common.Prec
-        Common.Token
-        Common.Utils
-        CommonLogic.AS_CommonLogic
-        CommonLogic.Lexer_CLIF
-        CommonLogic.Parse_CLIF
-        CommonLogic.Tools
-        Data.ByteString.UTF8
-        OWL2.ColonKeywords
-        OWL2.Keywords
-
-    -- LANGUAGE extensions used by modules in this package.
-    -- other-extensions:
-    build-depends:    
-        base,
-        parsec,
-        fgl,
-        bytestring ^>=0.11.3.1,
-        containers ^>=0.6.5.1,
-        directory ^>=1.3.6.2,
-        filepath ^>=1.4.2.2,
-        process ^>=1.6.13.2
-    hs-source-dirs:   app
-    default-language: Haskell2010
-
 executable clsentscra_e
     main-is:          cra_e.hs
 

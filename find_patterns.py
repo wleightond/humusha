@@ -75,14 +75,17 @@ def get_object_from_combination(
     )
 
 
+CONSTRAINT_OPS = {"EQUALS": lambda a, b: a == b}
+
+
 def check_combination(
     combination: tuple[AxiomInstance, ...], pattern: str, config: dict
 ) -> bool:
     constraints: list[list[list[str]]] = config["patterns"][pattern]["constraints"]
-    for [left_ref, right_ref] in constraints:
+    for [op, left_ref, right_ref] in constraints:
         left_obj = get_object_from_combination(left_ref, combination)
         right_obj = get_object_from_combination(right_ref, combination)
-        if left_obj.object_value != right_obj.object_value:
+        if not CONSTRAINT_OPS[op](left_obj.object_value, right_obj.object_value):
             return False
     return True
 

@@ -40,4 +40,4 @@ def apply(
         ) + axiom_to_add
     while "\n\n" in ontology:
         ontology = ontology.replace("\n\n", "\n")
-    return ontology.strip()+'\n'
+    return ontology.strip() + "\n"
