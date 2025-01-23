@@ -1,6 +1,7 @@
 prep_onto
 simple_parse
 bin/
+build_instance_finders.log
 
 # MacOS
 .DS_Store
