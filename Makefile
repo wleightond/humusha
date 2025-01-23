@@ -25,11 +25,11 @@ finders:
 	./humusha build-instance-finders
 
 test-patts:
-	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/test_$$i.clif; done
+	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do ./humusha run-all $$i ./test_files/test_$$i.clif; done
 
 test-reals:
-	for file in {DMOP,MDMOP,MNaive_animal_ontology2,MOntoDerm_5.3,MSEGOv3,MSceneOntology,PhysicalEntity,SceneOntology,SpacialAction}; do for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/$$file.clif; done; done
-	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do time ./humusha run-all $$i ./test_files/test_ontology.clif; done
+	for file in {DMOP,MDMOP,MNaive_animal_ontology2,MOntoDerm_5.3,MSEGOv3,MSceneOntology,MScene_rr,PhysicalEntity,SceneOntology,SpacialAction}; do for i in {cdp,cop,cra_e,pcop,qdp,rr}; do ./humusha run-all $$i ./test_files/$$file.clif; done; done
+	for i in {cdp,cop,cra_e,pcop,qdp,rr}; do ./humusha run-all $$i ./test_files/test_ontology.clif; done
 
 test: test-patts test-reals
 

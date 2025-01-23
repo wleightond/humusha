@@ -35,9 +35,7 @@
     (exists (y)
       (and (Time y) (has-quale x y)))))
 
-
-(forall (x) (if (Employee x) (exists (y) (and (generically-dependent-on x y)
-                                              (Person y)))))
+(forall (x) (if (Employee x) (exists (y) (and (generically-dependent-on x y) (Person y)))))
 
 (forall (x)
   (if (Person x)

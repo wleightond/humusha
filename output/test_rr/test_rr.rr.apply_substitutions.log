@@ -1,5 +1,5 @@
 
-Received 3 axioms to delete.
+Received 3 axiom(s) to delete.
 
 Deleting axiom:
 (forall (x) (if (Person x) (POB x)))
@@ -11,7 +11,7 @@ Deleting axiom:
 (forall (x) (if (Employee x) (exists (y) (and (OGD x y)
                                               (Person y)))))
 
-Received 1 axioms to add.
+Received 1 axiom(s) to add.
 
 Adding axiom:
 (forall (x) (if (Employee x) (Person x)))

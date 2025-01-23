@@ -19,7 +19,7 @@ def get_commands(instr):
 def apply(
     adds: list[str], deletes: list[str], ontology: str, log: TextIOWrapper
 ) -> str:
-    log.write(f"\nReceived {len(deletes)} axioms to delete.\n")
+    log.write(f"\nReceived {len(deletes)} axiom(s) to delete.\n")
     for axiom_to_delete in deletes:
         log.write(f"\nDeleting axiom:\n")
         log.write(f"{axiom_to_delete}\n")
@@ -31,7 +31,7 @@ def apply(
             exit(1)
         ontology = ontology.replace(axiom_to_delete, "", 1)
     # log.write(adds)
-    log.write(f"\nReceived {len(adds)} axioms to add.\n")
+    log.write(f"\nReceived {len(adds)} axiom(s) to add.\n")
     for axiom_to_add in adds:
         log.write(f"\nAdding axiom:\n")
         log.write(f"{axiom_to_add}\n")

@@ -47,14 +47,14 @@ def build_instance_finders():
         patterns = build(config, log)
     click.echo(f"Configured patterns: {patterns}")
     click.echo("Instance finders built to: ./bin/")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
 @click.argument("ontology_file")
 def normalise_ontology(ontology_file):
     start = time()
-    click.echo("\nNormalising ontology...")
+    click.echo("Normalising ontology...")
     normalised_ontology_filename = (
         f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
     )
@@ -64,7 +64,7 @@ def normalise_ontology(ontology_file):
     ) as normalised_ontology_file:
         subprocess.run(["./prep_onto"], stdin=ontology, stdout=normalised_ontology_file)
     click.echo(f"Normalised ontology written to: {normalised_ontology_filename}")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
@@ -72,7 +72,7 @@ def normalise_ontology(ontology_file):
 @click.argument("ontology_file")
 def find_axiom_instances(pattern, ontology_file):
     start = time()
-    click.echo("\nFinding axiom instances...")
+    click.echo("Finding axiom instances...")
     normalised_ontology_filename = (
         f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
     )
@@ -86,7 +86,7 @@ def find_axiom_instances(pattern, ontology_file):
             stdout=axioms_file,
         )
     click.echo(f"Axiom instances written to: {axioms_filename}")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
@@ -94,7 +94,7 @@ def find_axiom_instances(pattern, ontology_file):
 @click.argument("ontology_file")
 def find_patterns(pattern, ontology_file):
     start = time()
-    click.echo("\nFinding patterns...")
+    click.echo("Finding patterns...")
     log_file = f"{target_path(ontology_file)}.{pattern}.find_patterns.log"
     instance_file = f"{target_path(ontology_file)}.{pattern}.instances"
     pattern_file = f"{target_path(ontology_file)}.{pattern}.patterns"
@@ -130,7 +130,7 @@ def find_patterns(pattern, ontology_file):
 
     click.echo(f"Logs written to: {log_file}")
     click.echo(f"Patterns written to: {pattern_file}")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
@@ -138,7 +138,7 @@ def find_patterns(pattern, ontology_file):
 @click.argument("ontology_file")
 def generate_substitutions(pattern, ontology_file):
     start = time()
-    click.echo("\nGenerating substitutions...")
+    click.echo("Generating substitutions...")
     log_file = f"{target_path(ontology_file)}.{pattern}.generate_substitutions.log"
     pattern_file = f"{target_path(ontology_file)}.{pattern}.patterns"
     substitution_file = f"{target_path(ontology_file)}.{pattern}.substitutions"
@@ -151,7 +151,7 @@ def generate_substitutions(pattern, ontology_file):
     with open(log_file, "w") as log:
         patterns = deserialize(data)
 
-        log.write(f"\nReceived {len(patterns)} pattern(s).\n")
+        log.write(f"\nReceived {len(patterns)} pattern instance(s).\n")
         log.write(f"Patterns:\n")
         for item in patterns:
             log.write(f"\t{item}\n")
@@ -176,7 +176,7 @@ def generate_substitutions(pattern, ontology_file):
                 f.write(f"COMMAND: ADD\n{axiom}\n")
     click.echo(f"Logs written to: {log_file}")
     click.echo(f"Substitutions written to: {substitution_file}")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
@@ -184,7 +184,7 @@ def generate_substitutions(pattern, ontology_file):
 @click.argument("ontology_file")
 def apply_substitutions(pattern, ontology_file):
     start = time()
-    click.echo("\nApplying substitutions...")
+    click.echo("Applying substitutions...")
     normalised_ontology_file = (
         f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
     )
@@ -209,7 +209,7 @@ def apply_substitutions(pattern, ontology_file):
 
     click.echo(f"Logs written to: {log_file}")
     click.echo(f"Output ontology written to: {output_file}")
-    click.echo(f"Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 @click.command()
@@ -222,7 +222,7 @@ def run_all(pattern, ontology_file):
     find_patterns.callback(pattern, ontology_file)
     generate_substitutions.callback(pattern, ontology_file)
     apply_substitutions.callback(pattern, ontology_file)
-    click.echo(f"Total Time taken: {1000*(time()-start):.3f}ms")
+    click.echo(f"Total Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 cli.add_command(build_instance_finders)
