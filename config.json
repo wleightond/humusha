@@ -69,6 +69,21 @@
             "sentence": "(forall (x) (if (B x) (exists (y) (and (C y) (has-focus x y)))))",
             "objs": ["B", "C"],
             "constraints": [["EQUALS", "B", "{C}-Occurence"]]
+        },
+        "rt_f1": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["EQUALS", "B", ["Quality"]]]
+        }, 
+        "rt_f2": {
+            "sentence": "(forall (x) (if (A x) (B x)))",
+            "objs": ["A", "B"],
+            "constraints": [["EQUALS", "B", ["POB"]]]
+        }, 
+        "rt_f3": {
+            "sentence": "(forall (x) (if (A x) (exists (y) (and (B y) (R y x)))))",
+            "objs": ["A", "B", "R"],
+            "constraints": [["EQUALS", "R", ["inheres-in"]]]
         }
     },
     "patterns": {
@@ -132,6 +147,21 @@
             "constraints": [],
             "substitution": [
                 "(forall (x) (if ({cra_e_f1_A} x) (exists (y) (hasDataValue x y))))"
+            ]
+        },
+        "rt": {
+            "formulae": ["rt_f1", "rt_f2", "rt_f3"],
+            "constraints": [
+                ["EQUALS", ["rt_f1", "A"], ["rt_f3", "B"]],
+                ["EQUALS", ["rt_f2", "A"], ["rt_f3", "A"]]
+            ],
+            "substitution": [
+                "(forall (x) (if ({rt_f1_A} x) ({rt_f1_B} x)))",
+                "(forall (x) (if ({rt_f2_A} x) ({rt_f2_B} x)))",
+                "(forall (x) (if ({rt_f3_A} x) (exists (y) (and ({rt_f3_B} y) ({rt_f3_R} y x)))))",
+                "(forall (x) (if ({rt_f1_A}-Occurrence x) (Event x)))",
+                "(forall (x) (if ({rt_f1_A}-Occurrence x) (exists (y) (and ({rt_f2_A} y) (participates-in y x)))))",
+                "(forall (x) (if ({rt_f1_A}-Occurrence x) (exists (y) (and ({rt_f1_A} y) (has-focus x y)))))"
             ]
         }
     }

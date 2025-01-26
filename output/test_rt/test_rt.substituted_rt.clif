@@ -1,0 +1,6 @@
+(forall (x) (if (Color x) (Quality x)))
+(forall (x) (if (Rose x) (POB x)))
+(forall (x) (if (Rose x) (exists (y) (and (Color y) (inheres-in y x)))))
+(forall (x) (if (Color-Occurrence x) (Event x)))
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Rose y) (participates-in y x)))))
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Color y) (has-focus x y)))))

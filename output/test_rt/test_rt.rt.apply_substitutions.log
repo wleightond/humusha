@@ -1,0 +1,32 @@
+
+Received 3 axiom(s) to delete.
+
+Deleting axiom:
+(forall (x) (if (Color x) (Quality x)))
+
+Deleting axiom:
+(forall (x) (if (Rose x) (POB x)))
+
+Deleting axiom:
+(forall (x) (if (Rose x) (exists (y) (and (Color y)
+                                          (inheres-in y x)))))
+
+Received 6 axiom(s) to add.
+
+Adding axiom:
+(forall (x) (if (Color x) (Quality x)))
+
+Adding axiom:
+(forall (x) (if (Rose x) (POB x)))
+
+Adding axiom:
+(forall (x) (if (Rose x) (exists (y) (and (Color y) (inheres-in y x)))))
+
+Adding axiom:
+(forall (x) (if (Color-Occurrence x) (Event x)))
+
+Adding axiom:
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Rose y) (participates-in y x)))))
+
+Adding axiom:
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Color y) (has-focus x y)))))
