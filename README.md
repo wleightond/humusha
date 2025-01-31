@@ -1,4 +1,4 @@
-# Humusha: Ontology Design Pattern Substitution in FOL Ontologies Proof-of-Concept Tool
+# Humusha: Ontology Pattern Substitution in FOL Ontologies Proof-of-Concept Tool
 
 [![DOI](https://zenodo.org/badge/824579063.svg)](https://doi.org/10.5281/zenodo.13983309)
 
