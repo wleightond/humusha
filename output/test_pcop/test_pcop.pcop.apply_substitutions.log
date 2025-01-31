@@ -1,0 +1,19 @@
+
+Received 3 axioms to delete.
+
+Deleting axiom:
+(forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
+                                                   (participant-in y x)))
+                                  (exists (z) (and (Person z)
+                                                   (participant-in z x))))))
+
+Deleting axiom:
+(forall (x) (if (Book x) (endurant x)))
+
+Deleting axiom:
+(forall (x) (if (Bookloan x) (perdurant x)))
+
+Received 1 axioms to add.
+
+Adding axiom:
+(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))

@@ -1,0 +1,10 @@
+
+Received 4 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='agentive-physical-object'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (agentive-physical-object a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f3', objs=[PatternObject(formula_name='rr_f3', object_name='A', object_value='non-physical-object'), PatternObject(formula_name='rr_f3', object_name='B', object_value='physical-endurant'), PatternObject(formula_name='rr_f3', object_name='R', object_value='generically-dependent-on')], sentence='(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a\n                                                                                   b)\n                                                         (physical-endurant b)))))\n')
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='OWLClass_acf0422d_386e_45b4_bde6_bd9447c310aa'), PatternObject(formula_name='rr_f1', object_name='B', object_value='agentive-physical-object')], sentence='(forall (a) (if (OWLClass_acf0422d_386e_45b4_bde6_bd9447c310aa a) (agentive-physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='OWLClass_d3823663_e900_40cb_a110_584151e8a7b6'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (OWLClass_d3823663_e900_40cb_a110_584151e8a7b6 a) (physical-object a)))')
+
+Found 0 pattern instance(s) for pattern 'rr'.
+Instances:

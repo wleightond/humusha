@@ -1,0 +1,18 @@
+
+Received 3 axioms to delete.
+
+Deleting axiom:
+(forall (a) (if (Plant a) (agentive-physical-object a)))
+
+Deleting axiom:
+(forall (a) (if (PetPlant a) (agentive-social-object a)))
+
+Deleting axiom:
+(forall (a) (if (PetPlant a) (exists (b) (and (generically-dependent-on a
+                                                                        b)
+                                              (Plant b)))))
+
+Received 1 axioms to add.
+
+Adding axiom:
+(forall (x) (if (PetPlant x) (Plant x)))

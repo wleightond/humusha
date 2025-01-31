@@ -1,18 +1,23 @@
 INSTANCE
-Just ("RR_f1",["PhysicalBuilding","physical-object"])
+Just ("rr_f1",["PhysicalBuilding","physical-object"])
 (forall (a) (if (PhysicalBuilding a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["PhysicalEntity","physical-object"])
+Just ("rr_f1",["PhysicalEntity","physical-object"])
 (forall (a) (if (PhysicalEntity a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["PhysicalRoom","physical-object"])
+Just ("rr_f1",["PhysicalRoom","physical-object"])
 (forall (a) (if (PhysicalRoom a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["User","physical-object"])
+Just ("rr_f1",["User","physical-object"])
 (forall (a) (if (User a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["Scene","physical-object"])
+Just ("rr_f1",["Scene","physical-object"])
 (forall (a) (if (Scene a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["SceneEntity","physical-object"])
+Just ("rr_f1",["SceneEntity","physical-object"])
 (forall (a) (if (SceneEntity a) (physical-object a)))
+INSTANCE
+Just ("rr_f3",["non-physical-object","physical-endurant","generically-dependent-on"])
+(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a
+                                                                                   b)
+                                                         (physical-endurant b)))))

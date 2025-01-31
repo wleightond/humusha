@@ -1,0 +1,13 @@
+COMMAND: DELETE
+(forall (a) (if (Plant a) (agentive-physical-object a)))
+
+COMMAND: DELETE
+(forall (a) (if (PetPlant a) (agentive-social-object a)))
+
+COMMAND: DELETE
+(forall (a) (if (PetPlant a) (exists (b) (and (generically-dependent-on a
+                                                                        b)
+                                              (Plant b)))))
+
+COMMAND: ADD
+(forall (x) (if (PetPlant x) (Plant x)))

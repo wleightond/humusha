@@ -1,15 +1,15 @@
 INSTANCE
-Just ("COP_f1",["Bookloan","Book","participant-in","Person"])
+Just ("cop_f1",["Bookloan","Book","participant-in","Person"])
 (forall (x) (if (Bookloan x) (and (exists (y) (and (Book y)
                                                    (participant-in y x)))
                                   (exists (z) (and (Person z)
                                                    (participant-in z x))))))
 INSTANCE
-Just ("PCOP_f2",["Bookloan","perdurant"])
+Just ("pcop_f2",["Bookloan","perdurant"])
 (forall (x) (if (Bookloan x) (perdurant x)))
 INSTANCE
-Just ("PCOP_f1",["Book","endurant"])
+Just ("pcop_f1",["Book","endurant"])
 (forall (x) (if (Book x) (endurant x)))
 INSTANCE
-Just ("PCOP_f1",["Person","endurant"])
+Just ("pcop_f1",["Person","endurant"])
 (forall (x) (if (Person x) (endurant x)))

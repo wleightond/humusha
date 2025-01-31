@@ -1,85 +1,237 @@
 #!/usr/bin/env python
 
+import json
+import subprocess
+from typing import Callable
 import click
 import os
+from time import time
+from apply_substitutions import apply, get_commands
+from build_instance_finders import build
+from find_patterns import CUSTOM_PATTERN_FUNCTIONS, get_instances, valid_matches
+from generate_substitutions import generate_substitution
+from models import AxiomInstance, PatternInstance, deserialize, serialize
+
 
 @click.group()
 def cli():
     pass
 
+
 def ext(filename):
-    return filename[filename.rindex('.')+1:]
+    return filename[filename.rindex(".") + 1 :]
+
 
 def target_filename(ontology_file):
-    full_fn = ontology_file[ontology_file.rindex('/')+1:]
-    target_filename = full_fn[:full_fn.rindex('.')]
+    full_fn = ontology_file[ontology_file.rindex("/") + 1 :]
+    target_filename = full_fn[: full_fn.rindex(".")]
     return target_filename
+
 
 def target_path(ontology_file):
     filename = target_filename(ontology_file)
     path = f"./output/{filename}/{filename}"
     return path
 
+
 @click.command()
 def build_instance_finders():
-    cmd = './build_instance_finders.py'
-    os.system(cmd)
-    click.echo('Instance finders built to: ./bin')
+    """Run once first, or after changing config.json."""
+    start = time()
+    log_file = f"output/build_instance_finders.log"
+
+    with open("config.json") as f:
+        config: dict = json.loads(f.read())
+
+    with open(log_file, "w") as log:
+        patterns = build(config, log)
+    click.echo(f"Configured patterns: {patterns}")
+    click.echo("Instance finders built to: ./bin/")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
 
 @click.command()
-@click.argument('ontology_file')
+@click.argument("ontology_file")
 def normalise_ontology(ontology_file):
-    output_file = f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
-    fmt_cmd = f"""mkdir -p output/{target_filename(ontology_file)} \
-        && ./prep_onto \
-            < {ontology_file}\
-            > {output_file}"""
-    os.system(fmt_cmd)
-    click.echo(f"Normalised ontology written to: {output_file}")
+    start = time()
+    click.echo("Normalising ontology...")
+    normalised_ontology_filename = (
+        f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
+    )
+    os.makedirs(f"output/{target_filename(ontology_file)}", exist_ok=True)
+    with open(ontology_file) as ontology, open(
+        normalised_ontology_filename, "w"
+    ) as normalised_ontology_file:
+        subprocess.run(["./prep_onto"], stdin=ontology, stdout=normalised_ontology_file)
+    click.echo(f"Normalised ontology written to: {normalised_ontology_filename}")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
 
 @click.command()
-@click.argument('pattern')
-@click.argument('ontology_file')
+@click.argument("pattern")
+@click.argument("ontology_file")
 def find_axiom_instances(pattern, ontology_file):
-    axioms_file = f"{target_path(ontology_file)}.{pattern}.instances"
-    cmd = f"""./bin/find_{pattern}_instances \
-        < {target_path(ontology_file)}.formatted.{ext(ontology_file)} \
-        > {axioms_file}"""
-    os.system(cmd)
-    click.echo(f"Axiom instances written to: {axioms_file}")
+    start = time()
+    click.echo("Finding axiom instances...")
+    normalised_ontology_filename = (
+        f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
+    )
+    axioms_filename = f"{target_path(ontology_file)}.{pattern}.instances"
+    with open(normalised_ontology_filename) as normalised_ontology_file, open(
+        axioms_filename, "w"
+    ) as axioms_file:
+        subprocess.run(
+            [f"./bin/find_{pattern}_instances"],
+            stdin=normalised_ontology_file,
+            stdout=axioms_file,
+        )
+    click.echo(f"Axiom instances written to: {axioms_filename}")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
 
 @click.command()
-@click.argument('pattern')
-@click.argument('ontology_file')
-def make_substitutions(pattern, ontology_file):
-    log_file = f"{target_path(ontology_file)}.{pattern}.make_subs.log"
-    substitution_file = f"{target_path(ontology_file)}.{pattern}.subs"
-    cmd = f"""./make_subs.py {pattern} \
-        < {target_path(ontology_file)}.{pattern}.instances \
-        2> {log_file} \
-        1> {substitution_file}"""
-    os.system(cmd)
+@click.argument("pattern")
+@click.argument("ontology_file")
+def find_patterns(pattern, ontology_file):
+    start = time()
+    click.echo("Finding patterns...")
+    log_file = f"{target_path(ontology_file)}.{pattern}.find_patterns.log"
+    instance_file = f"{target_path(ontology_file)}.{pattern}.instances"
+    pattern_file = f"{target_path(ontology_file)}.{pattern}.patterns"
+
+    with open("config.json") as f:
+        config: dict = json.loads(f.read())
+
+    with open(instance_file) as f:
+        data = f.read().strip()
+
+    get_pattern_instances: Callable[
+        [str, list[AxiomInstance], dict], list[PatternInstance]
+    ] = CUSTOM_PATTERN_FUNCTIONS.get(pattern, valid_matches)
+
+    with open(log_file, "w") as log:
+        matches = get_instances(data, config)
+        log.write(f"\nReceived {len(matches)} axiom instance(s).\n")
+        log.write(f"Axiom instances:\n")
+        for match in matches:
+            log.write(f"\t{match}\n")
+
+        pattern_instances = get_pattern_instances(pattern, matches, config)
+
+        log.write(
+            f"\nFound {len(pattern_instances)} pattern instance(s) for pattern '{pattern}'.\n"
+        )
+        log.write(f"Instances:\n")
+        for instance in pattern_instances:
+            log.write(f"\t{instance}\n")
+
+    with open(pattern_file, "w") as f:
+        f.write(serialize(pattern_instances))
+
+    click.echo(f"Logs written to: {log_file}")
+    click.echo(f"Patterns written to: {pattern_file}")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
+
+@click.command()
+@click.argument("pattern")
+@click.argument("ontology_file")
+def generate_substitutions(pattern, ontology_file):
+    start = time()
+    click.echo("Generating substitutions...")
+    log_file = f"{target_path(ontology_file)}.{pattern}.generate_substitutions.log"
+    pattern_file = f"{target_path(ontology_file)}.{pattern}.patterns"
+    substitution_file = f"{target_path(ontology_file)}.{pattern}.substitutions"
+    with open("config.json") as f:
+        config: dict = json.loads(f.read())
+
+    with open(pattern_file) as f:
+        data = f.read().strip()
+
+    with open(log_file, "w") as log:
+        patterns = deserialize(data)
+
+        log.write(f"\nReceived {len(patterns)} pattern instance(s).\n")
+        log.write(f"Patterns:\n")
+        for item in patterns:
+            log.write(f"\t{item}\n")
+
+        substitutions = [
+            generate_substitution(pattern_instance, config)
+            for pattern_instance in patterns
+        ]
+
+        log.write(
+            f"\nGenerated {len(substitutions)} substitution(s) for pattern '{pattern}'.\n"
+        )
+        log.write(f"Substitutions:\n")
+        for substitution in substitutions:
+            log.write(f"\t{substitution}\n")
+
+    with open(substitution_file, "w") as f:
+        for substitution in substitutions:
+            for axiom in substitution.axioms_to_delete:
+                f.write(f"COMMAND: DELETE\n{axiom}\n")
+            for axiom in substitution.axioms_to_add:
+                f.write(f"COMMAND: ADD\n{axiom}\n")
     click.echo(f"Logs written to: {log_file}")
     click.echo(f"Substitutions written to: {substitution_file}")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
 
 @click.command()
-@click.argument('pattern')
-@click.argument('ontology_file')
+@click.argument("pattern")
+@click.argument("ontology_file")
 def apply_substitutions(pattern, ontology_file):
-    output_file = f"{target_path(ontology_file)}.sub_{pattern}.{ext(ontology_file)}"
-    cmd = f"""./sub_patt.py \
-        {target_path(ontology_file)}.{pattern}.subs \
-        {target_path(ontology_file)}.formatted.{ext(ontology_file)} \
-        > {output_file}"""
-    os.system(cmd)
+    start = time()
+    click.echo("Applying substitutions...")
+    normalised_ontology_file = (
+        f"{target_path(ontology_file)}.formatted.{ext(ontology_file)}"
+    )
+    substitution_file = f"{target_path(ontology_file)}.{pattern}.substitutions"
+    output_file = (
+        f"{target_path(ontology_file)}.substituted_{pattern}.{ext(ontology_file)}"
+    )
+    log_file = f"{target_path(ontology_file)}.{pattern}.apply_substitutions.log"
+
+    with open(normalised_ontology_file) as f:
+        ontology = f.read()
+
+    with open(substitution_file) as f:
+        raw_substitutions = f.read()
+
+    with open(log_file, "w") as log:
+        adds, deletes = get_commands(raw_substitutions)
+        ontology = apply(adds, deletes, ontology, log)
+
+    with open(output_file, "w") as f:
+        f.write(ontology)
+
+    click.echo(f"Logs written to: {log_file}")
     click.echo(f"Output ontology written to: {output_file}")
+    click.echo(f"Time taken: {1000*(time()-start):.3f}ms\n")
+
+
+@click.command()
+@click.argument("pattern")
+@click.argument("ontology_file")
+def run_all(pattern, ontology_file):
+    start = time()
+    normalise_ontology.callback(ontology_file)
+    find_axiom_instances.callback(pattern, ontology_file)
+    find_patterns.callback(pattern, ontology_file)
+    generate_substitutions.callback(pattern, ontology_file)
+    apply_substitutions.callback(pattern, ontology_file)
+    click.echo(f"Total Time taken: {1000*(time()-start):.3f}ms\n")
 
 
 cli.add_command(build_instance_finders)
 cli.add_command(normalise_ontology)
 cli.add_command(find_axiom_instances)
-cli.add_command(make_substitutions)
+cli.add_command(find_patterns)
+cli.add_command(generate_substitutions)
 cli.add_command(apply_substitutions)
+cli.add_command(run_all)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cli()

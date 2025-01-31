@@ -1,0 +1,40 @@
+INSTANCE
+Just ("rr_f1",["agentive-physical-object","physical-object"])
+(forall (a) (if (agentive-physical-object a) (physical-object a)))
+INSTANCE
+Just ("rr_f2",["agentive-social-object","social-object"])
+(forall (a) (if (agentive-social-object a) (social-object a)))
+INSTANCE
+Just ("rr_f2",["PetPlant","agentive-social-object"])
+(forall (a) (if (PetPlant a) (agentive-social-object a)))
+INSTANCE
+Just ("rr_f3",["PetPlant","Plant","generically-dependent-on"])
+(forall (a) (if (PetPlant a) (exists (b) (and (generically-dependent-on a
+                                                                        b)
+                                              (Plant b)))))
+INSTANCE
+Just ("rr_f1",["PhysicalBuilding","physical-object"])
+(forall (a) (if (PhysicalBuilding a) (physical-object a)))
+INSTANCE
+Just ("rr_f1",["PhysicalEntity","physical-object"])
+(forall (a) (if (PhysicalEntity a) (physical-object a)))
+INSTANCE
+Just ("rr_f1",["PhysicalRoom","physical-object"])
+(forall (a) (if (PhysicalRoom a) (physical-object a)))
+INSTANCE
+Just ("rr_f1",["Plant","agentive-physical-object"])
+(forall (a) (if (Plant a) (agentive-physical-object a)))
+INSTANCE
+Just ("rr_f1",["User","physical-object"])
+(forall (a) (if (User a) (physical-object a)))
+INSTANCE
+Just ("rr_f1",["Scene","physical-object"])
+(forall (a) (if (Scene a) (physical-object a)))
+INSTANCE
+Just ("rr_f1",["SceneEntity","physical-object"])
+(forall (a) (if (SceneEntity a) (physical-object a)))
+INSTANCE
+Just ("rr_f3",["non-physical-object","physical-endurant","generically-dependent-on"])
+(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a
+                                                                                   b)
+                                                         (physical-endurant b)))))

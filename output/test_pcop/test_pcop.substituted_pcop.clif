@@ -1,0 +1,2 @@
+(forall (x) (if (Person x) (endurant x)))
+(forall (x) (forall (y) (if (hasBookloan x y) (and (Book x) (Person y)))))

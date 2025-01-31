@@ -1,0 +1,10 @@
+INSTANCE
+Just ("rt_f1",["Color","Quality"])
+(forall (x) (if (Color x) (Quality x)))
+INSTANCE
+Just ("rt_f2",["Rose","POB"])
+(forall (x) (if (Rose x) (POB x)))
+INSTANCE
+Just ("rt_f3",["Rose","Color","inheres-in"])
+(forall (x) (if (Rose x) (exists (y) (and (Color y)
+                                          (inheres-in y x)))))

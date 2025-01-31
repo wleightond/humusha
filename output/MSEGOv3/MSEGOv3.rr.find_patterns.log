@@ -1,0 +1,13 @@
+
+Received 7 axiom instance(s).
+Axiom instances:
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='observing-area'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (observing-area a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='sensor'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (sensor a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f1', objs=[PatternObject(formula_name='rr_f1', object_name='A', object_value='atmospheric-surface-layer'), PatternObject(formula_name='rr_f1', object_name='B', object_value='physical-object')], sentence='(forall (a) (if (atmospheric-surface-layer a) (physical-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='agentive-social-object'), PatternObject(formula_name='rr_f2', object_name='B', object_value='social-object')], sentence='(forall (a) (if (agentive-social-object a) (social-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='information-object'), PatternObject(formula_name='rr_f2', object_name='B', object_value='non-agentive-social-object')], sentence='(forall (a) (if (information-object a) (non-agentive-social-object a)))\n')
+	AxiomInstance(formula_name='rr_f2', objs=[PatternObject(formula_name='rr_f2', object_name='A', object_value='non-agentive-social-object'), PatternObject(formula_name='rr_f2', object_name='B', object_value='social-object')], sentence='(forall (a) (if (non-agentive-social-object a) (social-object a)))\n')
+	AxiomInstance(formula_name='rr_f3', objs=[PatternObject(formula_name='rr_f3', object_name='A', object_value='non-physical-object'), PatternObject(formula_name='rr_f3', object_name='B', object_value='physical-endurant'), PatternObject(formula_name='rr_f3', object_name='R', object_value='generically-dependent-on')], sentence='(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a\n                                                                                   b)\n                                                         (physical-endurant b)))))')
+
+Found 0 pattern instance(s) for pattern 'rr'.
+Instances:

@@ -1,0 +1,21 @@
+COMMAND: DELETE
+(forall (x) (if (Color x) (Quality x)))
+
+COMMAND: DELETE
+(forall (x) (if (Rose x) (POB x)))
+
+COMMAND: DELETE
+(forall (x) (if (Rose x) (exists (y) (and (Color y)
+                                          (inheres-in y x)))))
+COMMAND: ADD
+(forall (x) (if (Color x) (Quality x)))
+COMMAND: ADD
+(forall (x) (if (Rose x) (POB x)))
+COMMAND: ADD
+(forall (x) (if (Rose x) (exists (y) (and (Color y) (inheres-in y x)))))
+COMMAND: ADD
+(forall (x) (if (Color-Occurrence x) (Event x)))
+COMMAND: ADD
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Rose y) (participates-in y x)))))
+COMMAND: ADD
+(forall (x) (if (Color-Occurrence x) (exists (y) (and (Color y) (has-focus x y)))))

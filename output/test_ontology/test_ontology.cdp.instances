@@ -1,16 +1,12 @@
 INSTANCE
-Just ("CDP_f1",["Bookloan","Duration","has-quality"])
+Just ("cdp_f1",["Bookloan","Duration","has-quality"])
 (forall (x) (if (Bookloan x) (exists (y) (and (Duration y)
                                               (has-quality x y)))))
 INSTANCE
-Just ("CDP_f1",["Duration","Time","has-quale"])
+Just ("cdp_f1",["Duration","Time","has-quale"])
 (forall (x) (if (Duration x) (exists (y) (and (Time y)
                                               (has-quale x y)))))
 INSTANCE
-Just ("CDP_f1",["Employee","Person","generically-dependent-on"])
-(forall (x) (if (Employee x) (exists (y) (and (Person y)
-                                              (generically-dependent-on x y)))))
-INSTANCE
-Just ("CDP_f1",["Person","Running","participant-in"])
+Just ("cdp_f1",["Person","Running","participant-in"])
 (forall (x) (if (Person x) (exists (y) (and (Running y)
                                             (participant-in x y)))))

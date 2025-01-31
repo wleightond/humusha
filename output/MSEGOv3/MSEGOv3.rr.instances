@@ -1,18 +1,23 @@
 INSTANCE
-Just ("RR_f1",["observing-area","physical-object"])
+Just ("rr_f1",["observing-area","physical-object"])
 (forall (a) (if (observing-area a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["sensor","physical-object"])
+Just ("rr_f1",["sensor","physical-object"])
 (forall (a) (if (sensor a) (physical-object a)))
 INSTANCE
-Just ("RR_f1",["atmospheric-surface-layer","physical-object"])
+Just ("rr_f1",["atmospheric-surface-layer","physical-object"])
 (forall (a) (if (atmospheric-surface-layer a) (physical-object a)))
 INSTANCE
-Just ("RR_f2",["agentive-social-object","social-object"])
+Just ("rr_f2",["agentive-social-object","social-object"])
 (forall (a) (if (agentive-social-object a) (social-object a)))
 INSTANCE
-Just ("RR_f2",["information-object","non-agentive-social-object"])
+Just ("rr_f2",["information-object","non-agentive-social-object"])
 (forall (a) (if (information-object a) (non-agentive-social-object a)))
 INSTANCE
-Just ("RR_f2",["non-agentive-social-object","social-object"])
+Just ("rr_f2",["non-agentive-social-object","social-object"])
 (forall (a) (if (non-agentive-social-object a) (social-object a)))
+INSTANCE
+Just ("rr_f3",["non-physical-object","physical-endurant","generically-dependent-on"])
+(forall (a) (if (non-physical-object a) (exists (b) (and (generically-dependent-on a
+                                                                                   b)
+                                                         (physical-endurant b)))))

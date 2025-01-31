@@ -1,0 +1,26 @@
+
+Received 3 axioms to delete.
+
+Deleting axiom:
+(forall (a) (if (DM-Operator a) (exists (b) (and (boolean b)
+                                                 (isMultiAlgorithmOperator a
+                                                                           b)))))
+
+Deleting axiom:
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isAdmissible a b)))))
+
+Deleting axiom:
+(forall (a) (if (SearchStrategy a) (exists (b) (and (boolean b)
+                                                    (isComplete a b)))))
+
+Received 3 axioms to add.
+
+Adding axiom:
+(forall (x) (if (DM-Operator x) (exists (y) (and (boolean y) (hasDataValue x y)))))
+
+Adding axiom:
+(forall (x) (if (SearchStrategy x) (exists (y) (and (boolean y) (hasDataValue x y)))))
+
+Adding axiom:
+(forall (x) (if (SearchStrategy x) (exists (y) (and (boolean y) (hasDataValue x y)))))
